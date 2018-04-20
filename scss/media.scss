@@ -1,0 +1,491 @@
+.desktop {
+    display: flex;
+}
+
+.mobile {
+    display: none;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .header {
+        nav {
+
+            ul {
+                align-items: center;
+                text-align: center;
+                li a {
+                    font-size: 12px;
+                    padding: 25px 8px 30px 8px;
+                }
+            }
+        }
+    }
+    .how-it-works {
+        &__left {
+            font-size: 12px;
+            h3 {
+                font-size: 20px;
+            }
+            &__bg {
+                right: 0;
+                left: 0;
+                margin: auto;
+            }
+            &__text {
+                &__1 {
+                    right: 120px;
+                    width: 165px;
+                }
+                &__2 {
+                    right: -165px;
+                    width: 175px;
+                    top: 195px;
+                }
+                &__3 {
+                    top: 375px;
+                    width: 165px;
+                    right: 120px;
+                }
+            }
+        }
+        &__right {
+            font-size: 12px;
+            h3 {
+                font-size: 20px;
+            }
+            &__bg {
+                right: 0;
+                left: 0;
+                margin: auto;
+            }
+            &__text {
+                &__1 {
+                    width: 165px;
+                    left: -155px;
+                    top: 40px;
+                }
+                &__2 {
+                    left: 110px;
+                    width: 175px;
+                    top: 200px;
+                }
+                &__3 {
+                    top: 375px;
+                    width: 165px;
+                    left: -155px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .header {
+        &__buttons {
+            white-space: normal;
+            text-align: right;
+            justify-content: space-between;
+            display: block;
+            .btn__small {
+                display: block;
+                padding: 5px 5px;
+                margin: 5px 0px 5px 0px;
+            }
+        }
+    }
+
+    .main-search-block__buttons .btn {
+        padding: 15px 20px;
+    }
+
+    .how-it-works {
+        &__left,
+        &__right {
+            &__text {
+                &__1,
+                &__2,
+                &__3 {
+                    font-size: 10px;
+                    width: 130px;
+                }
+            }
+        }
+        &__left {
+            height: 472px;
+            h3 {
+                font-size: 18px;
+            }
+            &__bg {
+                width: 86px;
+                height: 290px;
+                right: 0;
+                background-size: cover;
+                left: 0;
+                margin: auto;
+                top: 110px;
+            }
+            &__text {
+                &__1 {
+                    right: 85px;
+                    width: 150px;
+                    top: 20px;
+                }
+                &__2 {
+                    right: -170px;
+                    width: 175px;
+                    top: 125px;
+                }
+                &__3 {
+                    top: 245px;
+                    width: 155px;
+                    right: 85px;
+                }
+            }
+        }
+        &__right {
+            height: 472px;
+            h3 {
+                font-size: 18px;
+            }
+            &__bg {
+                width: 86px;
+                height: 290px;
+                right: 0;
+                background-size: cover;
+                left: 0;
+                margin: auto;
+                top: 110px;
+            }
+            &__text {
+                &__1 {
+                    width: 150px;
+                    left: -150px;
+                    top: 20px;
+                }
+                &__2 {
+                    left: 80px;
+                    width: 155px;
+                    top: 130px;
+                }
+                &__3 {
+                    top: 245px;
+                    width: 150px;
+                    left: -150px;
+                }
+            }
+        }
+    }
+
+    .footer ul li a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-menu-container  {
+        display: block;
+    }
+    .header {
+
+        .logo {
+            img {
+                width: 200px;
+            }
+        }
+        .container {
+            padding: 0px 20px;
+            height: 85px;
+        }
+        nav {
+            display: none;
+        }
+        &__buttons {
+            white-space: normal;
+            text-align: right;
+            display: flex;
+            &__burger {
+                display: block;
+            }
+            .btn__small {
+                display: inline-block;
+                padding: 10px 25px;
+                margin: 0px 15px 0 5px;
+                font-size: 18px;
+                width: auto;
+            }
+        }
+    }
+
+    .main-search-block {
+        height: auto;
+        .container {
+            padding: 40px 20px;
+        }
+        &__title {
+            font-size: 38px;
+        }
+        &__subtitle {
+            width: 100%;
+        }
+        &__input {
+            width: 100%;
+        }
+        &__buttons {
+            width: 100%;
+            display: block;
+            .btn {
+                // margin-top: 1    0px;
+                margin: 25px auto 0;
+                display: block;
+                background: #f4387d;
+                font-size: 16px;
+                width: 300px;
+            }
+        }
+    }
+
+    .how-it-works {
+        display: block;
+        &__title {
+            position: relative;
+            display: block;
+            margin: auto;
+            text-align: center;
+            width: auto;
+            span {
+                color: #000;
+            }
+        }
+        &__left,
+        &__right {
+            &__text {
+                &__1,
+                &__2,
+                &__3 {
+                    font-size: 12px; // width: 130px;
+                }
+            }
+        }
+        &__left {
+            width: 100%;
+            height: 500px;
+            &__bg {
+                top: 120px;
+                width: 96px;
+                height: 320px;
+            }
+            &__text {
+                &__1 {
+                    right: 95px;
+                    width: 170px;
+                    top: 20px;
+                }
+                &__2 {
+                    right: -170px;
+                    width: 175px;
+                    top: 145px;
+                }
+                &__3 {
+                    top: 275px;
+                    width: 170px;
+                    right: 95px;
+                }
+            }
+        }
+        &__right {
+            width: 100%;
+            height: 435px;
+            h3 {
+                left: -10px;
+            }
+            &__bg {
+                top: 50px;
+                width: 96px;
+                height: 320px;
+            }
+            &__text {
+                &__1 {
+                    width: 175px;
+                    left: -175px;
+                    top: 20px;
+                }
+                &__2 {
+                    left: 90px;
+                    width: 170px;
+                    top: 145px;
+                }
+                &__3 {
+                    top: 275px;
+                    width: 175px;
+                    left: -175px;
+                }
+            }
+        }
+        &__title {
+            left: 0;
+        }
+    }
+
+    .vacancies {
+        .container {
+            padding: 15px 20px;
+        }
+        .vacancies__items__item__descr {
+            height: auto;
+        }
+
+        &__items {
+            display: block;
+            &__item {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .advantages {
+        &__subtitle {
+            font-size: 18px;
+            width: 90%;
+            font-weight: 100;
+        }
+
+        &__benefits__item {
+            width: 50%; // font-size: 22px;
+            font-size: 20px;
+        }
+        .btn {
+            // margin-top: 1    0px;
+            margin: 25px auto 0;
+            display: block;
+            background: #f4387d;
+            font-size: 16px;
+            width: 300px;
+        }
+    }
+    .questionary {
+
+        &__items {
+            display: block;
+            &__item {
+                padding: 15px 0 15px 0;
+                width: 100%;
+                &__info {
+                    width: 80%;
+                }
+            }
+        }
+        .container {
+            padding: 15px 20px;
+        }
+        &__logo {
+            // width: 200px;
+            display: block;
+            margin: 20px auto;
+        }
+        &__last-section p {
+            padding-left: 0;
+        }
+    }
+
+    .footer ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header__buttons {
+        justify-content: flex-end;
+        .btn__small {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: flex;
+    }
+    .logo img {
+        width: 200px;
+    }
+
+    .header {
+        .container {
+            height: 55px;
+        }
+    }
+
+    .main-search-block {
+        &__title {
+            font-size: 24px;
+        }
+        &__buttons {
+
+            .btn {
+                padding: 20px 20px;
+                font-size: 18px;
+                width: 100%;
+            }
+        }
+        &__input {
+            display: block;
+            &__city {
+                right: 20px;
+            }
+            input[type=text] {
+                border-radius: 3px 3px 3px 3px;
+            }
+
+            .btn__small {
+
+                border-radius: 3px 3px 3px 3px;
+                display: block;
+                margin: 15px auto;
+                padding: 10px 30px;
+                font-size: 24px; // width: 50%;
+            }
+        }
+    }
+
+    .how-it-works {
+        &__left,
+        &__right {
+            &__text {
+                &__1,
+                &__2,
+                &__3 {
+                   display: none;
+                }
+            }
+        }
+    }
+
+    .how-it-works__title {
+        font-size: 36px;
+        border-width: 4px;
+    }
+
+    .advantages {
+        &__benefits__item {
+            font-size: 16px;
+        }
+        .btn {
+            padding: 20px 20px;
+            font-size: 22px;
+            width: 100%;
+        }
+    }
+    .questionary {
+        &__logo {
+            width: 200px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+}
