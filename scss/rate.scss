@@ -1,0 +1,70 @@
+.rate-page {
+    .rate-bg {
+        background: url(../img/rate-bg.png) no-repeat;
+        background-size: cover;
+    }
+
+    .rates-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .rate-block {
+        height: 610px;
+        width: 24%;
+        margin-top: 20px;
+        padding-bottom: 20px;
+
+        h2 {
+            font-size: 20px;
+            color: #f73c80;
+        }
+        p {
+            font-weight: 300;
+        }
+
+        &__head {
+            background: #e8e8e8;
+
+            text-align: center;
+            padding: 10px;
+            font-size: 16px;
+            &__cost {
+                font-size: 34px;
+            }
+        }
+        &__body {
+            padding: 20px;
+            background: #fff;
+            &__item {
+                position: relative;
+                margin-bottom: 15px;
+                &.active:before {
+                    background: #f73c80;
+                }
+                &.inactive:before {
+                    background: #909090;
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 2px;
+                    left: -5px;
+                    height: 15px;
+                    width: 2px;
+                }
+            }
+        }
+    }
+
+    .border-left {
+        padding-bottom: 10px;
+        &__active {
+            font-size: 16px;
+        }
+        &__inactive {
+            font-size: 16px;
+            color: #909090;
+        }
+    }
+}

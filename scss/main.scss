@@ -4,12 +4,39 @@ body {
     font-family: Gilroy;
 }
 
+main {
+    min-height: calc(100% - 67px - 85px);
+}
+
+.blue-line {
+    background: #0a1859;
+    .container {
+        padding: 20px 30px;
+    }
+    h1 {
+
+
+        color: #fff;
+        font-size: 40px;
+        font-weight: 300;
+    }
+}
+
+
 .container {
     width: 100%;
     max-width: 1270px;
     margin: auto;
     padding: 0 20px;
     min-width: 300px;
+}
+
+.breadcrumbs {
+    display: flex;
+    &__item {
+        color: #fff;
+        margin-right: 5px;
+    }
 }
 
 
@@ -58,6 +85,25 @@ body {
             margin: auto;
             width: 10px;
             height: 12px;
+        }
+    }
+    &__big {
+        outline: none;
+        background: #f4387d;
+        border-radius: 2px;
+        font-size: 25px;
+        border: none;
+        padding: 10px 30px;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        font-family: Gilroy;
+        transition: 0.2s;
+        &:hover {
+            background: darken(#f4387d, 15%);
+        }
+        &:active {
+            transform: translateY(1px);
         }
     }
 }
