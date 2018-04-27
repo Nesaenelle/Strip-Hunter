@@ -1,0 +1,186 @@
+.new-table {
+    // table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    // min-width: 900px;
+    overflow: auto;
+    &__title {
+        font-size: 14px;
+        margin: 5px 0 15px 0;
+    }
+    &__head {
+        &__row {
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            line-height: 13px;
+        }
+        &__col {
+            padding: 11px 10px 11px 40px;
+            color: black;
+            font-size: 14px;
+            // white-space: pre;
+            position: relative;
+            font-weight: 600;
+            .icon {
+                position: absolute;
+                left: 8px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+    }
+    &__body {
+        &__row {
+            border-bottom: 1px solid #dfe2e5;
+            display: flex;
+            background: #fff;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            &:first-child {
+                margin-top: 15px;
+            }
+        }
+
+        &__col {
+            padding: 10px 8px;
+            min-height: 37px;
+            color: #354052;
+            font-size: 12px;
+            padding: 10px 8px; // max-height: 37px;
+            white-space: nowrap;
+            vertical-align: initial;
+            a {
+
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    &.notifications {
+        .new-table__head__col,
+        .new-table__body__col {
+            &:nth-child(1) {
+                width: 33%;
+            }
+            &:nth-child(2) {
+                width: 33%;
+            }
+            &:nth-child(3) {
+                width: 33%;
+            }
+        }
+    }
+    &.favorites {
+        .new-table__head__col,
+        .new-table__body__col {
+            white-space: normal;
+            &:nth-child(1) {
+                width: 35%;
+                font-weight: 600;
+            }
+            &:nth-child(2) {
+                width: 40%;
+            }
+            &:nth-child(3) {
+                width: 25%;
+                padding: 2px 10px 2px 40px;
+            }
+        }
+    }
+
+    &.resume {
+        .new-table__head__col,
+        .new-table__body__col {
+            &:nth-child(1) {
+                width: 20%;
+            }
+            &:nth-child(2) {
+                width: 10%;
+            }
+            &:nth-child(3) {
+                width: 15%;
+            }
+            &:nth-child(4) {
+                width: 15%;
+            }
+            &:nth-child(5) {
+                width: 10%;
+                text-align: center;
+            }
+            &:nth-child(6) {
+                width: 15%;
+            }
+            &:nth-child(7) {
+                width: 15%;
+                padding: 2px 10px 2px 40px;
+                line-height: 10px;
+                min-width: 150px;
+            }
+        }
+    }
+
+    &.orders {
+        .new-table__head__col,
+        .new-table__body__col {
+            &:nth-child(1) {
+                width: 20%;
+                font-weight: 600;
+            }
+            &:nth-child(2) {
+                width: 20%;
+            }
+            &:nth-child(3) {
+                width: 20%;
+            }
+            &:nth-child(4) {
+                width: 20%;
+            }
+            &:nth-child(5) {
+                width: 20%;
+                .btn__small__blue {
+                    padding: 10px 25px;
+                }
+            }
+        }
+    }
+    &.order-details {
+        .new-table__head__col,
+        .new-table__body__col {
+            &:nth-child(1) {
+                width: 35%;
+            }
+            &:nth-child(2) {
+                width: 65%;
+            }
+        }
+        .new-table__body__col {
+            &:nth-child(1) {
+               font-size: 24px;
+               color: #f4387d;
+               font-weight: 600;
+            }
+            &:nth-child(2) {
+              font-size: 16px;
+              font-weight: 600;
+              color: #f4387d;
+            }
+        }
+    }
+}
+
+
+.waiting {
+    color: #ddc541;
+}
+.inactive {
+    color: #8e8e8e;
+}
+.posted , .done {
+    color: #08ad00;
+}
+.unread {
+    color: #142faf;
+}

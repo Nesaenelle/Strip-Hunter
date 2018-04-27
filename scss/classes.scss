@@ -61,6 +61,16 @@
     }
 }
 
+.colx3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .col-item {
+        width: calc(100% / 3 - 20px);
+    }
+}
+
+
 .hidden {
     display: none;
 }

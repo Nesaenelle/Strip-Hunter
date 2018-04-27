@@ -11,11 +11,9 @@ main {
 .blue-line {
     background: #0a1859;
     .container {
-        padding: 20px 30px;
+        padding: 30px 45px;
     }
     h1 {
-
-
         color: #fff;
         font-size: 40px;
         font-weight: 300;
@@ -101,6 +99,26 @@ main {
         transition: 0.2s;
         &:hover {
             background: darken(#f4387d, 15%);
+        }
+        &:active {
+            transform: translateY(1px);
+        }
+    }
+    &__small__blue {
+        outline: none;
+        background: #142faf;
+        border-radius: 2px;
+        font-size: 14px;
+
+        border: none;
+        padding: 10px;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        font-family: Gilroy;
+        transition: 0.2s;
+        &:hover {
+            background: darken(#152fac, 15%);
         }
         &:active {
             transform: translateY(1px);
@@ -604,6 +622,33 @@ main {
         p {
             padding-bottom: 10px;
             padding-left: 95px;
+        }
+    }
+}
+
+.imgs-upload {
+    display: flex;
+    margin-right: 20px;
+    &__main {
+        border-top: 4px solid #f4387d;
+        width: 270px;
+        height: 270px;
+        background: #bababa url(../img/camera.png) no-repeat center;
+        margin-right: 20px;
+    }
+    &__small {
+        width: 270px;
+        height: 270px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-content: space-between;
+        border-top: 4px solid #fff;
+        border-bottom: 4px solid #f4387d;
+        &__item {
+            width: 123px;
+            height: 123px;
+            background: #bababa url(../img/camera-small.png) no-repeat center;
         }
     }
 }

@@ -35,8 +35,8 @@
                 </ul>
             </nav>
             <div class="header__buttons">
-                <button class="btn__small"><img src="img/profile.png" alt="">Кабинет</button>
-                <button class="btn__small"><img src="img/out.png" alt="">Выход</button>
+                <button class="btn__small"><i class="icon icon-profile"></i>Кабинет</button>
+                <button class="btn__small"><i class="icon icon-out"></i>Выход</button>
                 <div class="header__buttons__burger" id="main-menu">
                     <span></span>
                     <span></span>
@@ -45,15 +45,15 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="profile">
         <div class="blue-line">
             <div class="container">
                 <div class="flex j-c-s-b a-i-c">
                     <div>
-                        <h1 class="rate-h1">Заказы</h1>
+                        <h1 class="rate-h1">Детали учетной записи</h1>
                         <div class="breadcrumbs">
                             <a class="breadcrumbs__item" href="">StripHunter.com</a>
-                            <a class="breadcrumbs__item" href="">Заказы</a>
+                            <a class="breadcrumbs__item" href="">Профиль</a>
                         </div>
                     </div>
                     <button class="btn">Опубликовать резюме</button>
@@ -61,29 +61,314 @@
             </div>
         </div>
         <div class="container">
-            <div class="imgs-upload">
-            </div>
-            <div>
-                Здравствуйте Snejanna
-                <p>С панели управления вашей учетной записью вы можете просмотреть свои recent orders, управлять своими shipping and billing addresses и edit your password and account details. Чтобы проверить список вакансий и приложений, посетите Employer Dashboard.</p>
+            <div class="profile__top">
+                <div class="imgs-upload">
+                    <div class="imgs-upload__main"></div>
+                    <div class="imgs-upload__small">
+                        <div class="imgs-upload__small__item"></div>
+                        <div class="imgs-upload__small__item"></div>
+                        <div class="imgs-upload__small__item"></div>
+                        <div class="imgs-upload__small__item"></div>
+                    </div>
+                </div>
+                <div>
+                    <h1><span>Здравствуйте</span> <b>Snejanna</b></h1>
+                    <p>С панели управления вашей учетной записью вы можете просмотреть свои recent orders, управлять своими shipping and billing addresses и edit your password and account details.</p>
+                    <p>Чтобы проверить список вакансий и приложений, посетите Employer Dashboard.</p>
+                </div>
             </div>
             <div class="custom-tabs">
-                <div class="custom-tabs__item active" data-id="1"><i></i>Профиль</div>
-                <div class="custom-tabs__item" data-id="2"><i></i>Уведомления</div>
-                <div class="custom-tabs__item" data-id="3"><i></i>Резюме</div>
-                <div class="custom-tabs__item" data-id="4"><i></i>Избранное</div>
-                <div class="custom-tabs__item" data-id="5"><i></i>Заказы</div>
+                <div class="custom-tabs__item active" data-id="1"><i class="icon icon-profile2"></i>Профиль</div>
+                <div class="custom-tabs__item" data-id="2"><i class="icon icon-notice"></i>Уведомления</div>
+                <div class="custom-tabs__item" data-id="3"><i class="icon icon-resume "></i>Резюме</div>
+                <div class="custom-tabs__item" data-id="4"><i class="icon icon-chosen2"></i>Избранное</div>
+                <div class="custom-tabs__item" data-id="5"><i class="icon icon-order"></i>Заказы</div>
             </div>
             <div class="custom-tabs__content">
                 <div class="custom-tabs__content__item active" data-id="1">
                     <form action="">
-                        <input type="text">
+                        <div class="colx2">
+                            <div class="col-item input">
+                                <label for="">Имя<b>*</b></label>
+                                <input type="text" required>
+                            </div>
+                            <div class="col-item input">
+                                <label for="">Фамилия<b>*</b></label>
+                                <input type="text" required>
+                            </div>
+                        </div>
+                        <div class="colx2">
+                            <div class="col-item input">
+                                <label for="">E-mail</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="col-item input">
+                                <label for="">Логин<b>*</b></label>
+                                <input type="text" required>
+                            </div>
+                        </div>
+                        <div class="colx2">
+                            <div class="col-item input">
+                                <label for="">Моб. телефон<b>*</b></label>
+                                <input type="text" required>
+                            </div>
+                        </div>
+                        <div class="form-section">Местоположение<b>*</b></div>
+                        <div class="colx3">
+                            <div class="col-item input">
+                                <label for="">Страна:</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="col-item input">
+                                <label for="">Город:</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="col-item input">
+                            </div>
+                        </div>
+                        <div class="form-section">Смена пароля</div>
+                        <div class="colx3">
+                            <div class="col-item input">
+                                <label for="">Старый пароль:</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="col-item input">
+                                <label for="">Новый пароль:</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="col-item input">
+                                <label for="">Подтвердите новый пароль:</label>
+                                <input type="text" required>
+                            </div>
+                        </div>
+                        <button class="btn__big" type="submit">Сохранить изменения</button>
                     </form>
                 </div>
-                <div class="custom-tabs__content__item" data-id="2">2</div>
-                <div class="custom-tabs__content__item" data-id="3">3</div>
-                <div class="custom-tabs__content__item" data-id="4">4</div>
-                <div class="custom-tabs__content__item" data-id="5">5</div>
+                <div class="custom-tabs__content__item profile__notifications" data-id="2">
+                    <div class="profile__notifications__table">
+                        <div class="new-table__title">Предупреждения о работе указаны в таблице ниже. Ваши оповещения также будут отправляться на mulo1@gmail.com.</div>
+                        <div class="new-table notifications">
+                            <div class="new-table__head">
+                                <div class="new-table__head__row">
+                                    <div class="new-table__head__col"><i class="icon icon-write"></i>Имя оповещения</div>
+                                    <div class="new-table__head__col"><i class="icon icon-calendar"></i>Дата и время</div>
+                                    <div class="new-table__head__col"><i class="icon icon-status"></i>Статус</div>
+                                </div>
+                            </div>
+                            <div class="new-table__body">
+                                <div class="new-table__body__row">
+                                    <div class="new-table__body__col">Уведомление №1</div>
+                                    <div class="new-table__body__col">20.04.2018 16:31</div>
+                                    <div class="new-table__body__col unread">Не прочитано</div>
+                                </div>
+                                <div class="new-table__body__row">
+                                    <div class="new-table__body__col">Уведомление №1</div>
+                                    <div class="new-table__body__col">20.04.2018 11:15</div>
+                                    <div class="new-table__body__col">Прочитано</div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn__big" id="notificaions-table-btn">Настроить уведомления</button>
+                    </div>
+                    <div class="profile__notifications__settings">
+                        <label class="checkbox" for="checkbox-1">
+                            <input id="checkbox-1" value="1" type="checkbox"><span class="checkbox-label">Уведомлять об отправленых мне вакансиях</span>
+                            <i class="checkbox-icon"></i>
+                        </label>
+                        <label class="checkbox" for="checkbox-2">
+                            <input id="checkbox-2" value="2" type="checkbox"><span class="checkbox-label">Уведомлять об отправленных мне сообщениях</span>
+                            <i class="checkbox-icon"></i>
+                        </label>
+                        <label class="checkbox" for="checkbox-3">
+                            <input id="checkbox-3" value="3" type="checkbox"><span class="checkbox-label">Уведомлять о новых подходящих мне резюме</span>
+                            <i class="checkbox-icon"></i>
+                        </label>
+                        <label class="checkbox" for="checkbox-4">
+                            <input id="checkbox-4" value="4" type="checkbox"><span class="checkbox-label">Высылать еженедельную статистику просмотра моих резюме</span>
+                            <i class="checkbox-icon"></i>
+                        </label>
+                        <label class="checkbox" for="checkbox-5">
+                            <input id="checkbox-5" value="5" type="checkbox"><span class="checkbox-label">Отправлять уведомления на почту</span>
+                            <i class="checkbox-icon"></i>
+                        </label>
+                        <label class="checkbox" for="checkbox-6">
+                            <input id="checkbox-6" value="6" type="checkbox"><span class="checkbox-label">Рассылка актуальной информации и новостей сайта</span>
+                            <i class="checkbox-icon"></i>
+                        </label>
+                        <button class="btn__big" id="notificaions-settings-btn">Сохранить изменения</button>
+                    </div>
+                </div>
+                <div class="custom-tabs__content__item" data-id="3">
+                    <div class="new-table__title">Ваши резюме опубликованы в таблице ниже</div>
+                    <div class="new-table resume">
+                        <div class="new-table__head">
+                            <div class="new-table__head__row">
+                                <div class="new-table__head__col"><i class="icon icon-write"></i>Наименование</div>
+                                <div class="new-table__head__col"><i class="icon icon-status"></i>Статус</div>
+                                <div class="new-table__head__col"><i class="icon icon-calendar "></i>Дата публикации</div>
+                                <div class="new-table__head__col"><i class="icon icon-eye"></i>Просмотры</div>
+                                <div class="new-table__head__col"><i class="icon icon-comment"></i>Отклики</div>
+                                <div class="new-table__head__col"><i class="icon icon-enddate"></i>Дата окончания</div>
+                                <div class="new-table__head__col"><i class="icon icon-do"></i>Действия</div>
+                            </div>
+                        </div>
+                        <div class="new-table__body">
+                            <div class="new-table__body__row">
+                                <div class="new-table__body__col">Танцовщина г. Одесса</div>
+                                <div class="new-table__body__col posted">Опубликовано</div>
+                                <div class="new-table__body__col">20.04.2018</div>
+                                <div class="new-table__body__col">361</div>
+                                <div class="new-table__body__col">
+                                    <div>15</div>
+                                    <button class="btn__small__blue">Показать</button>
+                                </div>
+                                <div class="new-table__body__col">20.05.2018</div>
+                                <div class="new-table__body__col">
+                                    <a href=""><i class="icon icon-rewrite"></i>Редактировать</a>
+                                    <a href=""><i class="icon icon-publicate "></i>Опубликовать</a>
+                                    <a href=""><i class="icon icon-delete"></i>Удалить</a>
+                                    <a href=""><i class="icon icon-statistic"></i>Статистика</a>
+                                </div>
+                            </div>
+                            <div class="new-table__body__row">
+                                <div class="new-table__body__col">Танцовщина г. Одесса</div>
+                                <div class="new-table__body__col waiting">В ожидании</div>
+                                <div class="new-table__body__col">20.04.2018</div>
+                                <div class="new-table__body__col">361</div>
+                                <div class="new-table__body__col">
+                                    <div>15</div>
+                                    <button class="btn__small__blue">Показать</button>
+                                </div>
+                                <div class="new-table__body__col">20.05.2018</div>
+                                <div class="new-table__body__col">
+                                    <a href=""><i class="icon icon-rewrite"></i>Редактировать</a>
+                                    <a href=""><i class="icon icon-publicate "></i>Опубликовать</a>
+                                    <a href=""><i class="icon icon-delete"></i>Удалить</a>
+                                    <a href=""><i class="icon icon-statistic"></i>Статистика</a>
+                                </div>
+                            </div>
+                            <div class="new-table__body__row">
+                                <div class="new-table__body__col">Танцовщина г. Одесса</div>
+                                <div class="new-table__body__col inactive">Не активный</div>
+                                <div class="new-table__body__col">20.04.2018</div>
+                                <div class="new-table__body__col">361</div>
+                                <div class="new-table__body__col">
+                                    <div>15</div>
+                                    <button class="btn__small__blue">Показать</button>
+                                </div>
+                                <div class="new-table__body__col">20.05.2018</div>
+                                <div class="new-table__body__col">
+                                    <a href=""><i class="icon icon-rewrite"></i>Редактировать</a>
+                                    <a href=""><i class="icon icon-publicate "></i>Опубликовать</a>
+                                    <a href=""><i class="icon icon-delete"></i>Удалить</a>
+                                    <a href=""><i class="icon icon-statistic"></i>Статистика</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn__big mt-20" id="notificaions-table-btn">Добавить резюме</button>
+                </div>
+                <div class="custom-tabs__content__item" data-id="4">
+                    <div class="new-table__title">Ваши избранные вакансии показаны в таблице ниже.</div>
+                    <div class="new-table favorites">
+                        <div class="new-table__head">
+                            <div class="new-table__head__row">
+                                <div class="new-table__head__col"><i class="icon icon-tab"></i>Закладка</div>
+                                <div class="new-table__head__col"><i class="icon icon-note-small"></i>Заметки</div>
+                                <div class="new-table__head__col"><i class="icon icon-do "></i>Действия</div>
+                            </div>
+                        </div>
+                        <div class="new-table__body">
+                            <div class="new-table__body__row">
+                                <div class="new-table__body__col">Танцовщица
+                                    <br>г. Одесса</div>
+                                <div class="new-table__body__col">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor i exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</div>
+                                <div class="new-table__body__col">
+                                    <a href=""><i class="icon icon-rewrite"></i>Редактировать</a>
+                                    <a href=""><i class="icon icon-delete"></i>Удалить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-tabs__content__item orders-tab" data-id="5">
+                    <div class="orders-tab__empty" id="orders__empty">
+                        <div class="orders-tab__empty__text">Не создано ни одного заказа.</div>
+                        <div class="orders-tab__empty__button">
+                            <button class="btn__small__blue" id="create-order">Сделать заказ</button>
+                        </div>
+                    </div>
+                    <div class="orders-tab__table" id="orders__table">
+                        <div class="new-table__title">Информация о Ваших заказах представлена в таблице ниже.</div>
+                        <div class="new-table orders">
+                            <div class="new-table__head">
+                                <div class="new-table__head__row">
+                                    <div class="new-table__head__col"><i class="icon icon-write"></i>Заказ</div>
+                                    <div class="new-table__head__col"><i class="icon icon-status"></i>Статус</div>
+                                    <div class="new-table__head__col"><i class="icon icon-calendar"></i>Дата</div>
+                                    <div class="new-table__head__col"><i class="icon icon-vallet"></i>Оплата</div>
+                                    <div class="new-table__head__col"><i class="icon icon-do "></i>Действия</div>
+                                </div>
+                            </div>
+                            <div class="new-table__body">
+                                <div class="new-table__body__row">
+                                    <div class="new-table__body__col">№1 392</div>
+                                    <div class="new-table__body__col done">Выполнен</div>
+                                    <div class="new-table__body__col">20.04.2018</div>
+                                    <div class="new-table__body__col">50.50 $ / 1304.50 грн за 1 месяц</div>
+                                    <div class="new-table__body__col">
+                                        <button class="btn__small__blue" id="details-order">Просмотр</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn__big mt-20">Добавить заказ</button>
+                    </div>
+                    <div class="orders-tab__details" id="orders__details">
+                        <div class="new-table__title">Информация о заказе №392</div>
+                        <div class="new-table order-details">
+                            <div class="new-table__head">
+                                <div class="new-table__head__row">
+                                    <div class="new-table__head__col"><i class="icon icon-write"></i>Товар</div>
+                                    <div class="new-table__head__col"><i class="icon icon-status"></i>Стоимость</div>
+                                </div>
+                            </div>
+                            <div class="new-table__body">
+                                <div class="new-table__body__row">
+                                    <div class="new-table__body__col">VIP x 1</div>
+                                    <div class="new-table__body__col">50.00 $ / 1304.50 грн</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orders-tab__list">
+                            <div class="orders-tab__list__item">
+                                <div class="orders-tab__list__item__title">Дата оформления</div>
+                                <div class="orders-tab__list__item__value">20.04.2018</div>
+                            </div>
+                            <div class="orders-tab__list__item">
+                                <div class="orders-tab__list__item__title">Дата окончания</div>
+                                <div class="orders-tab__list__item__value">20.04.2018</div>
+                            </div>
+                            <div class="orders-tab__list__item">
+                                <div class="orders-tab__list__item__title">Срок действия</div>
+                                <div class="orders-tab__list__item__value">1 месяц</div>
+                            </div>
+                            <div class="orders-tab__list__item">
+                                <div class="orders-tab__list__item__title">Способ оплаты</div>
+                                <div class="orders-tab__list__item__value">Liqpay</div>
+                            </div>
+                            <div class="orders-tab__list__item">
+                                <div class="orders-tab__list__item__title">Статус</div>
+                                <div class="orders-tab__list__item__value">ВЫполнен</div>
+                            </div>
+                            <div class="orders-tab__list__item">
+                                <div class="orders-tab__list__item__title">Платежный адрес</div>
+                                <div class="orders-tab__list__item__value">Н/Д testclub@usa.net</div>
+                            </div>
+                        </div>
+                        <button class="btn__big mt-20">Заказать снова</button>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

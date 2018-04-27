@@ -180,6 +180,13 @@
     .footer ul li a {
         font-size: 12px;
     }
+
+    .imgs-upload {
+        display: block;
+        &__small {
+            margin-top: 20px;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {

@@ -22,7 +22,7 @@ gulp.task('styles', function() {
 gulp.task('scripts', function(cb) {
     pump([
             gulp.src('./js/*.js'),
-            uglify(),
+         //   uglify(),
             concat('all.js'),
             gulp.dest('dist')
         ],
