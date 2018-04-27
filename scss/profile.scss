@@ -1,32 +1,40 @@
 .profile {
     &__top {
         display: flex;
-        margin-bottom: 50px;
+        margin-bottom: 81px;
         padding: 0px 20px;
-        h1 {
-
-            span {
-                font-weight: 300;
-                position: relative;
-                &:after {
-                    position: absolute;
-                    content: '';
-                    width: 80%;
-                    height: 3px;
-                    bottom: -5px;
-                    left: 0;
-                    background: #f4387d;
+        &__info {
+            padding: 10px;
+            h1 {
+                font-size: 36px;
+                span {
+                    font-weight: 300;
+                    position: relative;
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        width: 90%;
+                        height: 3px;
+                        bottom: -4px;
+                        left: 0;
+                        background: #f4387d;
+                    }
                 }
             }
-        }
-        p {
-            margin-top: 10px;
+            p {
+                margin-top: 21px;
+                font-size: 21px;
+                letter-spacing: -0.3px;
+            }
         }
     }
     &__notifications {
         &__table {}
         &__settings {
             display: none;
+            form {
+                padding: 0px 20px;
+            }
         }
     }
 }

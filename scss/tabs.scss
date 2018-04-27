@@ -1,15 +1,21 @@
 .custom-tabs {
     display: flex;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     &__item {
-        margin: 0px 20px;
+        margin: 0 0px 0px 21px;
         background: #f4387d;
         color: #fff;
         border-radius: 5px 5px 0 0;
-        padding: 10px 15px;
+        padding: 10px;
         cursor: pointer;
         display: flex;
         align-items: center;
+        width: 157px;
+        justify-content: center;
+        text-transform: uppercase;
+        .icon {
+            min-width: 16px;
+        }
         &.active {
             background: #a5184b;
         }
@@ -18,13 +24,12 @@
     &__content {
         padding: 20px;
         border-radius: 5px 5px 0 0;
-        background: #ccc;
+        background: #e8e8e8;
         min-height: 400px;
-        &__item {
-            display: none;
-            &.active {
-                display: block;
-            }
+        &__item {}
+
+        .btn__big {
+            padding: 19px 42px;
         }
     }
 }
@@ -37,6 +42,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        .btn__big  {
+            display: none;
+            margin: auto;
+            padding: 15px 45px;
+        }
         &__text,
         &__button {
             width: 50%;
@@ -53,16 +63,20 @@
     }
 
     &__list {
-        width: 350px;
+        width: 526px;
+        margin-top: 15px;
         &__item {
             justify-content: space-between;
             display: flex;
+            margin-bottom: 4px;
             &__title {
                 width: 50%;
                 font-weight: 600;
+                font-size: 26px;
             }
             &__value {
                 width: 50%;
+                font-size: 24px;
             }
         }
     }

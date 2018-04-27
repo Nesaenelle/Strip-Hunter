@@ -78,6 +78,18 @@
             }
         }
     }
+
+    .new-table__head__col,
+    .new-table__body__col {
+        font-size: 12px;
+    }
+    .new-table.order-details .new-table__body__col:nth-child(1) {
+        font-size: 18px;
+    }
+    .new-table.order-details .new-table__body__col:nth-child(2) {
+        font-size: 14px;
+    }
+
 }
 
 @media screen and (max-width: 980px) {
@@ -181,16 +193,69 @@
         font-size: 12px;
     }
 
+    .orders-tab__empty {
+        text-align: center;
+        display: block;
+        .btn__small__blue {
+            display: none;
+        }
+        .btn__big {
+            display: block;
+        }
+        &__text {
+            width: 100%;
+            font-size: 28px;
+        }
+    }
+
     .imgs-upload {
         display: block;
         &__small {
             margin-top: 20px;
         }
     }
+
+    .custom-tabs__content {
+        .btn__big {
+            margin: auto;
+            display: block;
+            padding: 10px 20px;
+        }
+    }
+
+    .custom-tabs__item {
+        margin: 0 1px 1px 0;
+        width: calc(100%/3 - 1px);
+    }
+
+    .profile {
+        &__top {
+            margin-bottom: 30px;
+        }
+        .container {
+            padding: 0;
+        }
+        .blue-line {
+            .container {
+                padding: 12px 25px;
+            }
+        }
+    }
+
+    .colx2 {
+        .col-item {
+            width: 70%;
+        }
+    }
+    .colx3 {
+        .col-item {
+            width: 48%;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
-    .main-menu-container  {
+    .main-menu-container {
         display: block;
     }
     .header {
@@ -399,6 +464,38 @@
     .footer ul {
         display: none;
     }
+
+    .profile {
+        .blue-line {
+            .container {
+                .btn {
+                    display: none;
+                }
+            }
+        }
+        .imgs-upload {
+            margin: 0;
+        }
+        .new-table.order-details .new-table__body__col:nth-child(1) {
+            font-size: 14px;
+            white-space: normal;
+        }
+        .new-table.order-details .new-table__body__col:nth-child(2) {
+            font-size: 14px;
+            white-space: normal;
+        }
+        .orders-tab__list {
+            width: 100%;
+            &__item {
+                &__title {
+                    font-size: 16px;
+                }
+                &__value {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -407,6 +504,38 @@
         .btn__small {
             display: none;
         }
+    }
+
+    .profile__top {
+        display: block;
+        padding: 0;
+    }
+
+    .imgs-upload {
+        &__main {
+            width: 100%;
+        }
+        &__small {
+            width: 100%;
+            justify-content: space-around;
+            &__item {}
+        }
+    }
+
+    .custom-tabs__item {
+        margin: 0 1px 1px 0;
+        width: calc(100%/2 - 1px);
+    }
+
+    .new-table  {
+        display: none;
+        &.mobile {
+            display: block;
+        }
+    }
+
+    .custom-tabs__content .btn__big {
+        font-size: 18px;
     }
 }
 
@@ -466,7 +595,7 @@
                 &__1,
                 &__2,
                 &__3 {
-                   display: none;
+                    display: none;
                 }
             }
         }
@@ -493,6 +622,21 @@
         }
         p {
             font-size: 14px;
+        }
+    }
+
+
+    .profile__notifications__settings form {
+        padding: 0;
+    }
+    .colx2 {
+        .col-item {
+            width: 100%;
+        }
+    }
+    .colx3 {
+        .col-item {
+            width: 80%;
         }
     }
 }

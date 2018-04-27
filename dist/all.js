@@ -34,25 +34,25 @@
 
 }());
 
-(function() {
-    var customTabs = document.querySelectorAll('.custom-tabs__item[data-id]');
+// (function() {
+//     var customTabs = document.querySelectorAll('.custom-tabs__item[data-id]');
 
-    customTabs.forEach(function(tab) {
-        tab.addEventListener('click', function(e) {
-            e.stopPropagation();
-            var id = this.getAttribute('data-id');
-            customTabs.forEach(function(tab) { tab.classList.remove('active') })
-            this.classList.add('active');
-            var contents = document.querySelectorAll('.custom-tabs__content__item[data-id]');
-            contents.forEach(function(content) {
-                content.style.display = content.getAttribute('data-id') == id ? 'block' : 'none';
-            })
+//     customTabs.forEach(function(tab) {
+//         tab.addEventListener('click', function(e) {
+//             e.stopPropagation();
+//             var id = this.getAttribute('data-id');
+//             customTabs.forEach(function(tab) { tab.classList.remove('active') })
+//             this.classList.add('active');
+//             var contents = document.querySelectorAll('.custom-tabs__content__item[data-id]');
+//             contents.forEach(function(content) {
+//                 content.style.display = content.getAttribute('data-id') == id ? 'block' : 'none';
+//             })
 
-        }, false);
-    })
+//         }, false);
+//     })
 
 
-}());
+// }());
 
 (function() {
     var btnTable = document.querySelector('#notificaions-table-btn');
@@ -72,24 +72,28 @@
 }());
 
 (function() {
-    var createBtn = document.querySelector('#create-order');
-    var detailsBtn = document.querySelector('#details-order');
+    var createBtns = document.querySelectorAll('.js-create-order');
+    var detailsBtns = document.querySelectorAll('.js-details-order');
 
     var ordersEmpty = document.querySelector('#orders__empty');
     var ordersTable = document.querySelector('#orders__table');
     var ordersDetails = document.querySelector('#orders__details');
 
-    if (createBtn) {
-        createBtn.addEventListener('click', function(e) {
-            ordersEmpty.style.display = 'none';
-            ordersTable.style.display = 'block';
+    if (createBtns.length) {
+        createBtns.forEach(function(btn) {
+            btn.addEventListener('click', function(e) {
+                ordersEmpty.style.display = 'none';
+                ordersTable.style.display = 'block';
+            });
         });
     }
 
-    if (detailsBtn) {
-        detailsBtn.addEventListener('click', function(e) {
-            ordersTable.style.display = 'none';
-            ordersDetails.style.display = 'block';
+    if (detailsBtns.length) {
+        detailsBtns.forEach(function(btn) {
+            btn.addEventListener('click', function(e) {
+                ordersTable.style.display = 'none';
+                ordersDetails.style.display = 'block';
+            });
         });
     }
 }());
