@@ -34,25 +34,26 @@
 
 }());
 
-// (function() {
-//     var customTabs = document.querySelectorAll('.custom-tabs__item[data-id]');
+(function() {
+    var customTabs = document.querySelectorAll('.custom-tabs__item[data-id]');
 
-//     customTabs.forEach(function(tab) {
-//         tab.addEventListener('click', function(e) {
-//             e.stopPropagation();
-//             var id = this.getAttribute('data-id');
-//             customTabs.forEach(function(tab) { tab.classList.remove('active') })
-//             this.classList.add('active');
-//             var contents = document.querySelectorAll('.custom-tabs__content__item[data-id]');
-//             contents.forEach(function(content) {
-//                 content.style.display = content.getAttribute('data-id') == id ? 'block' : 'none';
-//             })
+    customTabs.forEach(function(tab) {
+        tab.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            var id = this.getAttribute('data-id');
+            customTabs.forEach(function(tab) { tab.classList.remove('active') })
+            this.classList.add('active');
+            var contents = document.querySelectorAll('.custom-tabs__content__item[data-id]');
+            contents.forEach(function(content) {
+                content.style.display = content.getAttribute('data-id') == id ? 'block' : 'none';
+            })
 
-//         }, false);
-//     })
+        }, false);
+    })
 
 
-// }());
+}());
 
 (function() {
     var btnTable = document.querySelector('#notificaions-table-btn');
