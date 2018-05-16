@@ -1,8 +1,8 @@
 .modal {
     position: fixed;
     z-index: 999;
-    max-width: 768px;
-    max-height: 370px;
+    max-width: 430px;
+    max-height: 400px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -10,9 +10,8 @@
     margin: auto;
     padding: 20px 40px 30px 40px;
     border-radius: 4px; // overflow: hidden;
-    background: #fff;
-    // display: none;
-    width: 430px;
+    background: #fff; // display: none;
+    // min-width: 430px;
 
     &__close {
         background: url(../img/modal-close.png) no-repeat;
@@ -38,7 +37,7 @@
         z-index: 100;
         background: rgba(0, 0, 0, 0.8);
     } // background-size: contain;
-    .btn__small{ 
+    .btn__small {
         margin: 20px auto;
         display: block;
         border-radius: 6px;
@@ -50,8 +49,19 @@
         display: block;
         padding: 15px;
     }
-    .input input {
-        padding: 5px 10px;
+    .input {
+        label {
+            font-size: 14px;
+            display: block;
+            margin-bottom: 4px;
+        }
+        .icon + input {
+            padding: 5px 10px 5px 35px;
+        }
+
+        input {
+            padding: 5px 10px;
+        }
     }
     .checkbox {
         justify-content: center;
@@ -105,21 +115,6 @@
 
 @media screen and (max-width: 600px) {
     .modal {
-        background: url(../img/rocket.png) #fff right no-repeat;
-        background-size: 80%;
-        background-position: right bottom;
-        .inner-bg {
-            background: url(../img/bg_4_1.png) -1750px -821px no-repeat;
-        } // background-size: cover;
-        h1 {
-            font-size: 36px;
-            text-align: center;
-        }
-        .description {
-            font-size: 16px;
-            text-align: center;
-            line-height: 1.88;
-            width: 100%;
-        }
+
     }
 }

@@ -26,13 +26,16 @@ main {
     }
 }
 
-
 .container {
     width: 100%;
     max-width: 1270px;
     margin: auto;
     padding: 0 20px;
     min-width: 300px;
+}
+
+.black {
+    color: #000!important;
 }
 
 .breadcrumbs {
@@ -57,6 +60,47 @@ main {
     }
 }
 
+.pagination {
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    &__prev,
+    &__next {
+        border: solid #aaa;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 5px;
+        cursor: pointer;
+    }
+    &__prev {
+        margin-right: 10px;
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+    }
+    &__next {
+        margin-left: 10px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+    &__item {
+        padding: 5px 3px;
+        color: #7f8fa4;
+        font-size: 12px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 5px;
+        &.active {
+            color: #fff;
+            background: #f4387d;
+        }
+    }
+}
 
 .btn {
     border: 1px solid #ee2e74;
@@ -148,6 +192,7 @@ main {
 
 
 .main-search-block {
+    $self: &;
     background: url(../img/bg-1.png); // height: 460px;
     .container {
         padding: 40px 20px;
@@ -261,6 +306,27 @@ main {
             font-size: 18px;
         }
     }
+
+    &.search-page {
+        #{ $self }__input {
+            width: 100%;
+            margin: 20px auto 10px;
+        }
+        #{ $self }__results {
+            color: #fff;
+            font-size: 24px;
+            &__found {
+                margin-top: 5px;
+                font-size: 18px;
+            }
+            span{
+                color: #f4387d;
+            }
+        }
+        .container {
+            padding: 20px 40px;
+        }
+    }
 }
 
 .how-it-works {
@@ -347,7 +413,8 @@ main {
     }
     &__right {
         width: 50%;
-        background: #151826;
+        // background: #151826;
+        background: #0a1859;
         height: 100%;
         position: relative;
         height: 700px;
@@ -498,6 +565,7 @@ main {
             padding: 7px 10px;
             width: calc(100% / 3 - 10px);
             border: 1px solid #ccc;
+            position: relative;
             &__title {
                 font-size: 16px;
                 font-weight: 600;
@@ -522,6 +590,22 @@ main {
                 font-size: 14px;
                 font-weight: 600;
                 margin: 10px 0;
+            }
+            &__date {
+                font-size: 12px;
+                color: #8e8f94;
+                margin-right: 70px;
+            }
+            &__place {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+            &__logo {
+                position: absolute;
+                right: 10px;
+                width: 60px;
+                height: 60px;
+                bottom: 10px;
             }
             &__views {
                 font-size: 12px;
@@ -607,6 +691,10 @@ main {
                     position: absolute;
                 }
             }
+            &__age {
+                margin-top: 5px;
+                font-size: 12px;
+            }
             &__info {
                 width: 70%;
                 &__descr {
@@ -629,6 +717,10 @@ main {
                             color: #f73c80;
                         }
                     }
+                }
+                &__date {
+                    // font-weight: 600;
+                    font-size: 12px;
                 }
                 &__views {
                     font-size: 12px;
@@ -666,6 +758,35 @@ main {
             #{ $self }__item {
                 background: #fff;
                 padding: 20px 10px;
+            }
+        }
+        &.vertical {
+            display: block;
+            margin-top: 0;
+            #{ $self }__item {
+                position: relative;
+                margin-bottom: 20px;
+                width: 100%;
+                box-shadow: 0 3px 23px -9px #000;
+                border-radius: 0;
+                padding: 40px 20px 20px 20px;
+                border: 1px solid #ccc;
+                &__city {
+                    position: relative;
+                    top: -25px; // right: 10px;
+                }
+                &__search__title {
+                    font-size: 18px;
+                    color: #f4387d; // font-weight: 600;    
+                    position: absolute;
+                    top: 10px;
+                }
+                &__info {
+                    width: 80%;
+                }
+                &__name {
+                    font-weight: 300;
+                }
             }
         }
     }
@@ -837,5 +958,16 @@ main {
                 font-weight: 600;
             }
         }
+    }
+}
+
+.payment-system {
+    padding: 10px;
+    background: #fff;
+    width: 100px;
+    border-radius: 5px;
+    margin-right: 5px;
+    img {
+        width: 100%;
     }
 }

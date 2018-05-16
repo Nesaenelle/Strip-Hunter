@@ -133,9 +133,9 @@
             width: 38%;
             padding: 10px 10px 10px 10px;
             &.resume {
-            	padding: 70px 10px 10px 10px;
-            	display: flex;
-            	justify-content: center;
+                padding: 70px 10px 10px 10px;
+                display: flex;
+                justify-content: center;
             }
             border-radius: 5px;
             &.no-background {
@@ -159,15 +159,29 @@
                 }
             }
         }
-        &__socials {}
+        &__socials {
+            display: flex;
+            margin-top: 15px;
+            &__item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 35px;
+                height: 35px;
+                border-radius: 100%;
+                border: 1px solid #f73c80;
+                margin-right: 5px;
+                &.fb {}
+            }
+        }
     }
     &__vacancies {
-	    background: #e8e8e8;
-	    padding: 10px;
-	    border-radius: 5px;
-	    &__title {
-	    	font-size: 16px;
-	    	color: #f73c80;
-	    }
+        background: #e8e8e8;
+        padding: 10px;
+        border-radius: 5px;
+        &__title {
+            font-size: 16px;
+            color: #f73c80;
+        }
     }
 }

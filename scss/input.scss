@@ -2,7 +2,7 @@
     width: 100%;
     margin-bottom: 10px;
     margin-top: 8px;
-
+    position: relative;
     input {
         outline: none;
         width: 100%;
@@ -11,11 +11,32 @@
         border-radius: 4px;
         border: 1px solid #f73c80;
         transition: 0.1s;
+        &.dark {
+            border-color: #666;
+            &:focus {
+                box-shadow: 0 0 1px 1px #666;
+            }
+        }
         &:focus {
             box-shadow: 0 0 1px 1px #f73c80;
         }
     }
-
+    .icon {
+        position: absolute;
+        bottom: 2px;
+        left: 8px;
+        background-size: contain;
+        &.icon-locked {
+            bottom: 4px;
+        }
+    }
+    .btn__small {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        border-radius: 4px 4px 4px 4px;
+    }
     &__label {
         display: block;
         font-size: 18px;
@@ -52,6 +73,11 @@
     &__secondary {
         color: #8e8e8e;
         font-size: 14px;
+    }
+    &.splitter {
+        font-size: 20px;
+        color: #aaa;
+        margin: 15px 0 5px 0;
     }
 }
 
@@ -101,5 +127,46 @@
         &:focus {
             box-shadow: 0 0 1px 1px #f73c80;
         }
+    }
+}
+
+.radio {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    &__title {
+        margin-left: 25px;
+        font-size: 14px;
+        color: #5f5f5f;
+    }
+    input {
+        display: none;
+        &:checked {
+            & + .radio__checked {
+                &:after {
+                    content: '';
+                    background: #f4387d;
+                    width: 11px;
+                    height: 11px;
+                    border-radius: 100%;
+                    @include absolute-center;
+                }
+            }
+        }
+    }
+    &__checked {
+        top: 0;
+        left: 0;
+        width: 17px;
+        height: 17px;
+        position: absolute;
+        display: block;
+        border-radius: 100%;
+        border: solid 1px #bebebe;
     }
 }

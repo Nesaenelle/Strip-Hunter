@@ -6,6 +6,10 @@
     label.col-item {
         margin-top: 10px;
     }
+    &__link {
+        color: #142faf;
+        font-weight: 600;
+    }
     &__title {
     	color: #8e8e8e;
     	font-size: 20px;
@@ -51,5 +55,29 @@
         overflow: hidden;
         position: relative;
         cursor: pointer;
+    }
+
+    .new-table__body, .new-table__head{
+        min-width: auto;
+    }
+
+    .new-table.order-details {
+        .new-table__body__col {
+
+            &:nth-child(1) {
+                font-size: 20px;
+                &.regular {
+                    color: #000;  
+                }
+            }
+            &:nth-child(2) {
+                font-size: 26px;
+                &.regular {
+                    color: #000;  
+                    font-weight: normal; 
+                }
+            }
+
+        }
     }
 }

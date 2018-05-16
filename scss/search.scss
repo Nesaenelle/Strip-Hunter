@@ -1,0 +1,59 @@
+.search {
+    margin-bottom: 20px;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        align-items: end;
+        &__left {
+            width: 60%;
+            padding: 0px 20px 20px 20px;
+        }
+        &__right {
+            background: #e8e8e8;
+            width: 38%;
+            padding: 10px 30px 10px 10px;
+            border-radius: 5px;
+        }
+        &__filter {
+            &__category {
+                font-size: 16px;
+            }
+            .btn__small__blue {
+                margin: auto;
+                width: 150px;
+                display: block;
+            }
+            .input {
+                label {
+                    font-size: 14px;
+                }
+                input {
+                    border: none;
+                    padding: 8px 10px;
+                }
+            }
+            .grey-line {
+                height: 15px;
+                margin-top: 15px;
+                position: relative;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 100%; // left: 5px;
+                    border-bottom: 1px solid #ccc;
+                }
+            }
+        }
+        .vacancies__items {
+            margin-top: 0;
+            &__item {
+                padding: 15px 10px 20px 10px;
+            }
+            &__item__price {
+                margin-top: 0;
+            }
+        }
+    }
+}

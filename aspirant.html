@@ -99,19 +99,35 @@
                                 <input type="text" required>
                             </div>
                         </div>
+                        <div class="form-section">Дата рождения<b>*</b></div>
                         <div class="colx2">
-                            <div class="col-item input">
-                                <label for="" class="input__label">E-mail</label>
-                                <input type="text" required>
-                            </div>
-                            <div class="col-item input">
-                                <label for="" class="input__label">Логин<b>*</b></label>
-                                <input type="text" required>
+                            <div class="col-item colx3">
+                                <div class="col-item input">
+                                    <!-- <label for="" class="input__label__small">Число:</label> -->
+                                    <input type="text" required placeholder="Число">
+                                </div>
+                                <div class="col-item input">
+                                    <!-- <label for="" class="input__label__small">Месяц:</label> -->
+                                    <input type="text" required placeholder="Месяц">
+                                </div>
+                                <div class="col-item input">
+                                    <!-- <label for="" class="input__label__small">Год:</label> -->
+                                    <input type="text" required placeholder="Год">
+                                </div>
                             </div>
                         </div>
                         <div class="colx2">
                             <div class="col-item input">
                                 <label for="" class="input__label">Моб. телефон<b>*</b></label>
+                                <div class="relative">
+                                    <input type="text" required placeholder="+380">
+                                    <button class="btn__small" type="button">Сменить номер</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="colx2">
+                            <div class="col-item input">
+                                <label for="" class="input__label">E-mail</label>
                                 <input type="text" required>
                             </div>
                         </div>
@@ -128,19 +144,51 @@
                             <div class="col-item input">
                             </div>
                         </div>
-                        <div class="form-section">Смена пароля</div>
+                        <div class="form-section">Готовность к переезду</div>
                         <div class="colx3">
                             <div class="col-item input">
-                                <label for="" class="input__label__small">Старый пароль:</label>
-                                <input type="text" required>
+                                <input type="text" required placeholder="Нет">
+                            </div>
+                        </div>
+                        <div class="form-section splitter">Соц сети</div>
+
+                        <div class="colx2">
+                            <div class="col-item input">
+                                <label for="" class="input__label">Ссылка на Facebook</label>
+                                <input type="text">
                             </div>
                             <div class="col-item input">
-                                <label for="" class="input__label__small">Новый пароль:</label>
-                                <input type="text" required>
+                                <label for="" class="input__label">Ссылка на Instagram</label>
+                                <input type="text">
+                            </div>
+                        </div>
+
+                        <div class="colx2">
+                            <div class="col-item input">
+                                <label for="" class="input__label">Ссылка на VK</label>
+                                <input type="text">
                             </div>
                             <div class="col-item input">
-                                <label for="" class="input__label__small">Подтвердите новый пароль:</label>
-                                <input type="text" required>
+                                <label for="" class="input__label">Cсылка на Twitter</label>
+                                <input type="text">
+                            </div>
+                        </div>
+
+                        <div class="dotted-border">
+                            <div class="form-section">Смена пароля</div>
+                            <div class="colx3">
+                                <div class="col-item input ">
+                                    <label for="" class="input__label__small">Старый пароль:</label>
+                                    <input type="text" class="dark" required>
+                                </div>
+                                <div class="col-item input ">
+                                    <label for="" class="input__label__small">Новый пароль:</label>
+                                    <input type="text" class="dark" required>
+                                </div>
+                                <div class="col-item input ">
+                                    <label for="" class="input__label__small">Подтвердите новый пароль:</label>
+                                    <input type="text" class="dark" required>
+                                </div>
                             </div>
                         </div>
                         <button class="btn__big mt-30" type="submit">Сохранить изменения</button>
@@ -264,6 +312,7 @@
                                 <div class="new-table__body__col">
                                     <a href=""><i class="icon icon-rewrite"></i>Редактировать</a>
                                     <a href=""><i class="icon icon-publicate "></i>Опубликовать</a>
+                                    <a href=""><i class="far fa-eye-slash mr-5" style="color: #142faf"></i>Скрыть</a>
                                     <a href=""><i class="icon icon-delete"></i>Удалить</a>
                                     <a href=""><i class="icon icon-statistic"></i>Статистика</a>
                                 </div>
@@ -281,6 +330,7 @@
                                 <div class="new-table__body__col">
                                     <a href=""><i class="icon icon-rewrite"></i>Редактировать</a>
                                     <a href=""><i class="icon icon-publicate "></i>Опубликовать</a>
+                                    <a href=""><i class="far fa-eye-slash mr-5" style="color: #142faf"></i>Скрыть</a>
                                     <a href=""><i class="icon icon-delete"></i>Удалить</a>
                                     <a href=""><i class="icon icon-statistic"></i>Статистика</a>
                                 </div>
@@ -298,6 +348,7 @@
                                 <div class="new-table__body__col">
                                     <a href=""><i class="icon icon-rewrite"></i>Редактировать</a>
                                     <a href=""><i class="icon icon-publicate "></i>Опубликовать</a>
+                                    <a href=""><i class="far fa-eye-slash mr-5" style="color: #142faf"></i>Скрыть</a>
                                     <a href=""><i class="icon icon-delete"></i>Удалить</a>
                                     <a href=""><i class="icon icon-statistic"></i>Статистика</a>
                                 </div>
@@ -331,6 +382,7 @@
                                     <div class="new-table__body__col">
                                         <a href=""><i class="icon icon-rewrite"></i>Редактировать</a>
                                         <a href=""><i class="icon icon-publicate "></i>Опубликовать</a>
+                                        <a href=""><i class="far fa-eye-slash mr-5" style="color: #142faf"></i>Скрыть</a>
                                         <a href=""><i class="icon icon-delete"></i>Удалить</a>
                                         <a href=""><i class="icon icon-statistic"></i>Статистика</a>
                                     </div>
