@@ -1,0 +1,55 @@
+.form {
+
+    background: #e8e8e8;
+    padding: 20px 20% 20px 20px;
+    border-radius: 0px 0px 5px 5px;
+    label.col-item {
+        margin-top: 10px;
+    }
+    &__title {
+    	color: #8e8e8e;
+    	font-size: 20px;
+    }
+    &__inner {
+        margin-top: 10px;
+        padding: 20px 50px 20px 20px;
+        background: #d1d1d1;
+        position: relative;
+        border: 1px solid #8e8e8e;
+        border-radius: 5px;
+        &__close-btn {
+			width: 53px;
+			height: 50px;
+			background: red;
+			position: absolute;
+			right: -1px;
+			top: -1px;
+            background: url(../img/close.png);
+            cursor: pointer;
+        }
+        .form-section {
+        	margin-bottom: 0;
+        }
+        .input {
+        	margin-bottom: 0;
+            input {
+                border: 1px solid #8e8e8e;
+                padding: 9px 10px;
+            }
+        }
+        .textarea {
+        	textarea {
+        		border: 1px solid #8e8e8e;
+        		padding: 9px 10px;
+        		min-height: 80px;
+        	}
+        }
+    }
+    &__upload-img {
+        height: 270px;
+        background: url(../img/camera.png) center no-repeat #bababa;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+    }
+}

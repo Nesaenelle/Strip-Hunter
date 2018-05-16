@@ -1,6 +1,6 @@
 .input {
     width: 100%;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     margin-top: 8px;
 
     input {
@@ -18,8 +18,8 @@
 
     &__label {
         display: block;
-        font-size: 20px;
-        margin-bottom: 6px;
+        font-size: 18px;
+        margin-bottom: 2px;
         b {
             color: #f73c80;
         }
@@ -38,12 +38,13 @@
     height: 100%;
     cursor: pointer;
     text-indent: 999px;
+    z-index: 999;
 }
 
 .form-section {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 7px;
-    margin-bottom: -5px;
+    // margin-bottom: -5px;
     display: block;
     b {
         color: #f73c80;
@@ -72,7 +73,7 @@
         }
     }
     .checkbox-label {
-        font-size: 20px;
+        font-size: 16px;
         cursor: pointer;
     }
     .checkbox-icon {
@@ -96,6 +97,7 @@
         border-radius: 4px;
         border: 1px solid #f73c80;
         transition: 0.1s;
+        resize: vertical;
         &:focus {
             box-shadow: 0 0 1px 1px #f73c80;
         }

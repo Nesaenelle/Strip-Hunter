@@ -98,3 +98,77 @@
         });
     }
 }());
+
+
+(function() {
+    var signInBtns = document.querySelectorAll('.js-sign-in');
+    var signUpBtns = document.querySelectorAll('.js-sign-up');
+    var remindBtns = document.querySelectorAll('.js-remind');
+    var modalOverlay = document.querySelector('#modal-overlay');
+    var modalSignIn = document.querySelector('#modal-sign-in');
+    var modalSignUp = document.querySelector('#modal-sign-up');
+    var modalRemind = document.querySelector('#modal-remind');
+    var modals = document.querySelectorAll('.js-modal');
+    var closeBtns =  document.querySelectorAll('.js-close-modal');
+
+
+    if (signInBtns.length) {
+        signInBtns.forEach(function(btn) {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                closeModals();
+                modalOverlay.classList.remove('hidden');
+                modalSignIn.classList.remove('hidden');
+            });
+        });
+    }
+
+    if (signUpBtns.length) {
+        signUpBtns.forEach(function(btn) {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                closeModals();
+                modalOverlay.classList.remove('hidden');
+                modalSignUp.classList.remove('hidden');
+            });
+        });
+    }
+
+
+    if (remindBtns.length) {
+        remindBtns.forEach(function(btn) {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                e.preventDefault();
+                closeModals();
+                modalOverlay.classList.remove('hidden');
+                modalRemind.classList.remove('hidden');
+            });
+        });
+    }
+
+    if (closeBtns.length) {
+        closeBtns.forEach(function(btn) {
+            btn.addEventListener('click', function(e) {
+                closeModals();
+            });
+        });
+    }
+
+    window.addEventListener('click', function(e) {
+        modals.forEach(function(modal) {
+            if (!modal.classList.contains('hidden') && !modal.contains(e.target)) {
+                modal.classList.add('hidden')
+                modalOverlay.classList.add('hidden')
+            }
+        })
+
+    }, false);
+
+    function closeModals() {
+        modals.forEach(function(modal) {
+            modal.classList.add('hidden');
+        })
+        modalOverlay.classList.add('hidden');
+    }
+}());

@@ -132,7 +132,14 @@
     &-delete {
         background: url(../img/delete.png)no-repeat;
         width: 16px;
-        height: 16px;
+        height: 14px;
+        margin-right: 5px;
+    }
+    &-frame {
+        background: url(../img/frame.png)no-repeat;
+        background-size: cover;
+        width: 18px;
+        height: 18px;
         margin-right: 5px;
     }
     &-statistic {
@@ -144,6 +151,21 @@
     &-vallet {
 
         background: url(../img/vallet.png)no-repeat;
+        width: 20px;
+        height: 23px;
+        margin-right: 5px;
+        background-size: contain;
+    }
+    &-add {
+        background: url(../img/add.png)no-repeat;
+        width: 20px;
+        height: 23px;
+        margin-right: 5px;
+        background-size: contain;
+    }
+    &-marker{
+       
+        background: url(../img/marker.png)no-repeat;
         width: 20px;
         height: 23px;
         margin-right: 5px;

@@ -4,16 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Strip Hunter</title>
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
 
 <body>
     <div id="main-menu-container" class="main-menu-container">
         <div class="header__buttons">
-            <button class="btn__small"><i class="fas fa-unlock"></i>Войти</button>
-            <button class="btn__small">Регистрация</button>
+            <button class="btn__small js-sign-in"><i class="fas fa-unlock"></i>Войти</button>
+            <button class="btn__small js-sign-up">Регистрация</button>
         </div>
         <div>
             <ul class="main-menu-container__menu">
@@ -37,8 +35,8 @@
                 </ul>
             </nav>
             <div class="header__buttons">
-                <button class="btn__small">Регистрация</button>
-                <button class="btn__small"><i class="fas fa-unlock"></i>Войти</button>
+                <button class="btn__small js-sign-up">Регистрация</button>
+                <button class="btn__small js-sign-in"><i class="fas fa-unlock"></i>Войти</button>
                 <div class="header__buttons__burger" id="main-menu">
                     <span></span>
                     <span></span>
@@ -54,7 +52,6 @@
                 <div class="main-search-block__subtitle">На нашей бирже расположены, самые актуальные и самые свежие резюме девушек работающих в сфере ночного развлчения( стриптиз, пулденс ).
                 </div>
                 <div class="main-search-block__subtitle">Более 20тыс. активных пользователей со всего СНГ и ближайшего зарубежья, готовы стать участником вашего развтекательного клуба Удобная система поиска, легкий выбор специалистов, доступная цена!. .</div>
-                
                 <form class="main-search-block__input">
                     <i class="fas fa-search"></i>
                     <input type="text" required placeholder="Введите ключевые слова (например: пулденс,  танцовщица)">
@@ -315,6 +312,59 @@
             <div class="go-top-btn" id="go-top"><img src="img/drowup.png" alt=""></div>
         </div>
     </footer>
+    <div class="modal-overlay hidden" id="modal-overlay"></div>
+    <div class="modal js-modal hidden" id="modal-sign-in">
+        <div class="js-close-modal modal__close"></div>
+        <img class="modal__logo" src="img/modal-logo.png" alt="">
+        <form>
+            <div class="modal__descr">Вход</div>
+            <div class="input">
+                <label for="">Телефон: </label>
+                <input type="text" required>
+            </div>
+            <div class="input">
+                <label for="">Пароль: </label>
+                <input type="text" required>
+            </div>
+            <button class="btn__big ">Войти</button>
+            <label class="checkbox">
+                <input type="checkbox">
+                <div class="checkbox-icon"></div>
+                <div class="checkbox-label">Запомнить меня</div>
+            </label>
+            <a href="" class="js-remind modal__link">Забыли пароль?</a>
+        </form>
+    </div>
+    <div class="modal js-modal hidden" id="modal-sign-up">
+        <div class="js-close-modal modal__close"></div>
+        <img class="modal__logo" src="img/modal-logo.png" alt="">
+        <form>
+            <div class="modal__descr">Регистрация</div>
+            <div class="input">
+                <label for="">Телефон: </label>
+                <input type="text" required>
+            </div>
+            <div class="input">
+                <label for="">Я: </label>
+                <input type="text" required>
+            </div>
+            <button class="js-sign-up btn__big ">Зарегистрироваться</button>
+            <!-- <a href="" class="modal__link">Забыли пароль?</a> -->
+        </form>
+    </div>
+    <div class="modal js-modal hidden" id="modal-remind">
+        <div class="js-close-modal modal__close"></div>
+        <img class="modal__logo" src="img/modal-logo.png" alt="">
+        <form>
+            <div class="modal__descr">Введите паролт отправленный на указанный Вами телефон</div>
+            <div class="input">
+                <label for="">Пароль: </label>
+                <input type="text" required>
+                <button class="btn__small ">Отправить еще раз</button>
+            </div>
+            <button class="js-sign-in btn__big" type="button">Войти</button>
+        </form>
+    </div>
     <link rel="stylesheet" href="dist/style.css">
     <link rel="stylesheet" href="fonts/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
     <script src="dist/all.js"></script>
