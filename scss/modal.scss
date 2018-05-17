@@ -12,7 +12,7 @@
     border-radius: 4px; // overflow: hidden;
     background: #fff; // display: none;
     // min-width: 430px;
-
+    // margin: 0 10px;
     &__close {
         background: url(../img/modal-close.png) no-repeat;
         background-size: cover;
@@ -119,6 +119,6 @@
 
 @media screen and (max-width: 600px) {
     .modal {
-
+        width: 90%;
     }
 }
