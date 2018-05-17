@@ -21,7 +21,7 @@
         &__col {
             padding: 19px 10px 17px 50px;
             color: #000;
-            font-size: 14px; // white-space: pre;
+            font-size: 18px; // white-space: pre;
             position: relative;
             font-weight: 600;
             .icon {
@@ -44,12 +44,15 @@
             &:first-child {
                 margin-top: 22px;
             }
+            &.grey {
+                background: #d8d8d8;
+            }
         }
 
         &__col {
             min-height: 45px;
             color: #354052;
-            font-size: 12px;
+            font-size: 16px;
             padding: 10px 26px;
             white-space: nowrap;
             vertical-align: initial;
@@ -110,9 +113,6 @@
     }
 
     &.resume {
-        // .btn__small__blue {
-        //     padding: 8px 18px;
-        // }
         .new-table__head__col,
         .new-table__body__col {
             &:nth-child(1) {
@@ -139,6 +139,12 @@
                 line-height: 10px;
                 min-width: 150px;
             }
+
+            .btn__small__blue {
+                font-size: 16px;
+                padding: 7px 10px;
+                margin-top: 10px;
+            }
         }
     }
 
@@ -164,6 +170,10 @@
                     padding: 10px 25px;
                 }
             }
+        }
+        .btn__small__blue {
+            font-size: 16px;
+            padding: 7px 10px;
         }
     }
     &.order-details {

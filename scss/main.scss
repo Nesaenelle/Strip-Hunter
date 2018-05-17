@@ -38,6 +38,22 @@ main {
     color: #000!important;
 }
 
+.dotted-border {
+    position: relative;
+    &:before {
+        top: 0;
+        left: 0;
+        content: '';
+        position: absolute;
+        width: calc(100% + 15px);
+        height: calc(100% + 15px);
+        margin-left: -10px;
+        margin-top: -10px;
+        border: 1px dotted #4f4d4d;
+        border-radius: 5px;
+    }
+}
+
 .breadcrumbs {
     display: flex;
     margin-top: 10px;
@@ -126,7 +142,7 @@ main {
         outline: none;
         background: #f4387d;
         border-radius: 2px;
-        font-size: 14px;
+        font-size: 16px;
         border: none;
         padding: 10px;
         color: #fff;
@@ -176,7 +192,7 @@ main {
         outline: none;
         background: #142faf;
         border-radius: 2px;
-        font-size: 12px;
+        font-size: 16px;
 
         border: none;
         padding: 10px;

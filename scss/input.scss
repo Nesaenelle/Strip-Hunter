@@ -39,6 +39,8 @@
         right: 0;
         height: 100%;
         border-radius: 4px 4px 4px 4px;
+        line-height: 17px;
+        // font-weight: 600;
     }
     &__label {
         display: block;
@@ -81,6 +83,9 @@
         font-size: 20px;
         color: #aaa;
         margin: 15px 0 5px 0;
+        small {
+            font-size: 14px;
+        }
     }
 }
 
@@ -89,7 +94,7 @@
     display: flex;
     padding-left: 25px;
     margin: 10px 0 26px 0;
-    color: #7f8fa4;
+    color: #1d1d1d;
     font-size: 12px;
     cursor: pointer;
     line-height: 22px;
