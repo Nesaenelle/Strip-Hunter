@@ -16,14 +16,14 @@
     &-locked {
 
         background: url(../img/locked.png) no-repeat;
-        width: 22px;
-        height: 22px;
+        width: 14px;
+        height: 20px;
     }
 
     &-phone {
         background: url(../img/phone.png) no-repeat;
-        width: 25px;
-        height: 25px;
+        width: 13px;
+        height: 20px;
     }
 
     &-profile2 {
@@ -246,6 +246,12 @@
         background: url(../img/twitter.png) no-repeat;
         width: 16px;
         height: 13px;
+        background-size: contain;
+    }
+    &-rating {
+        background: url(../img/rating.png) no-repeat;
+        width: 22px;
+        height: 22px;
         background-size: contain;
     }
 }

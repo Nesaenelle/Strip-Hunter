@@ -3,7 +3,7 @@
     &__content {
         display: flex;
         justify-content: space-between;
-        margin-top: 20px;
+        margin-top: 25px;
         flex-wrap: wrap;
         align-items: end;
         &__left {
@@ -18,16 +18,24 @@
         }
         &__filter {
             &__category {
-                font-size: 16px;
+                font-size: 13px;
+                margin-top: 10px;
+                .icon {
+                    min-width: 15px;
+                    height: 15px;
+                }
             }
             .btn__small__blue {
                 margin: auto;
                 width: 150px;
                 display: block;
+                font-size: 16px;
+                margin-top: 10px;
             }
             .input {
+                margin: 0;
                 label {
-                    font-size: 14px;
+                    font-size: 11px;
                 }
                 input {
                     border: none;
@@ -35,9 +43,11 @@
                 }
             }
             .grey-line {
-                height: 15px;
-                margin-top: 15px;
+                height: 3px;
+                margin-top: 13px;
                 position: relative;
+                // margin-bottom: 7px;
+                width: 100%;
                 &:after {
                     content: '';
                     position: absolute;
@@ -49,10 +59,25 @@
         .vacancies__items {
             margin-top: 0;
             &__item {
-                padding: 15px 10px 20px 10px;
+                padding: 15px 10px 20px 17px;
+                &__title {
+                    font-size: 18px;
+                    font-weight: 300;
+                    margin-bottom: 10px;
+                }
+                &__place {
+                    font-size: 14px;
+                }
+                &__price {
+                    margin-top: 0;
+                    font-size: 12px;
+                    font-weight: 300;
+                }
             }
-            &__item__price {
-                margin-top: 0;
+        }
+        .colx2 {
+            .col-item {
+                width: 100%;
             }
         }
     }

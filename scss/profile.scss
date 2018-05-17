@@ -1,12 +1,12 @@
 .profile {
     &__top {
         display: flex;
-        margin-bottom: 81px;
+        margin-bottom: 63px;
         padding: 0px 20px;
         &__info {
             padding: 10px;
             h1 {
-                font-size: 36px;
+                font-size: 28px;
                 span {
                     font-weight: 300;
                     position: relative;
@@ -23,7 +23,7 @@
             }
             p {
                 margin-top: 21px;
-                font-size: 21px;
+                font-size: 16px;
                 letter-spacing: -0.3px;
             }
         }

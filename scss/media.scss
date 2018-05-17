@@ -89,7 +89,6 @@
     .new-table.order-details .new-table__body__col:nth-child(2) {
         font-size: 14px;
     }
-
 }
 
 @media screen and (max-width: 980px) {
@@ -249,7 +248,21 @@
     }
     .colx3 {
         .col-item {
+            width: calc(100% / 3 - 5px);
+        }
+    }
+
+    .form {
+        padding: 20px;
+        .colx2 .col-item {
             width: 48%;
+        }
+    }
+
+    .preview__content {
+        &__left {
+            padding: 20px;
+            margin-top: 30px;
         }
     }
 }
@@ -459,6 +472,7 @@
         &__last-section p {
             padding-left: 0;
         }
+        &.vertical {}
     }
 
     .footer ul {
@@ -496,6 +510,59 @@
             }
         }
     }
+    .search {
+        &.container {
+            padding: 0px 20px;
+        }
+    }
+    .search__content {
+        // display: block;
+        flex-direction: column-reverse;
+        margin-top: 0;
+        &__left {
+            margin-top: 20px;
+            padding: 0px;
+            width: 100%;
+        }
+        &__right {
+            width: 100%;
+            padding: 10px;
+        }
+        .grey-line {
+            display: none;
+        }
+        .colx2 {
+            .col-item {
+                width: 48%;
+            }
+        }
+    }
+    .preview__vacancies, .preview__resumes {
+        padding: 10px;
+    }
+    .preview__header {
+        &__buttons {
+            display: none;
+        }
+        &__info {
+            width: 85%;
+        }
+    }
+    .preview__content {
+        display: block;
+        &__buttons {
+            display: flex;
+        }
+        &__left {
+            width: 100%;
+            padding: 10px;
+            margin-top: 30px;
+        }
+        &__right {
+            margin-top: 20px;
+            width: 100%;
+        }
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -527,8 +594,11 @@
         width: calc(100%/2 - 1px);
     }
 
-    .new-table  {
+    .new-table {
         display: none;
+        &.const {
+            display: block;
+        }
         &.mobile {
             display: block;
         }
@@ -582,8 +652,8 @@
                 border-radius: 3px 3px 3px 3px;
                 display: block;
                 margin: 15px auto;
-                padding: 10px 30px;
-                font-size: 24px; // width: 50%;
+                padding: 8px 30px;
+                font-size: 20px; // width: 50%;
             }
         }
     }
@@ -616,6 +686,16 @@
             width: 100%;
         }
     }
+
+    .vacancies__items__item__descr {
+        display: none;
+    }
+    .vacancies__items__item__bottom {
+        display: block;
+        .vacancies__items__item__date {
+            margin-top: 5px;
+        }
+    }
     .questionary {
         &__logo {
             width: 200px;
@@ -623,6 +703,17 @@
         p {
             font-size: 14px;
         }
+
+    }
+    .questionary__items__item__info__descr {
+        display: none;
+    }
+    .questionary__items__item__info__top {
+        display: block;
+    }
+    .questionary__items.vertical .questionary__items__item__city {
+        margin: 10px 0;
+        position: static;
     }
 
 
@@ -638,5 +729,73 @@
         .col-item {
             width: 80%;
         }
+    }
+
+    .search {
+        &.container {
+            padding: 0px 10px;
+        }
+    }
+
+    .form {
+        padding: 10px;
+        // background: none;
+        .colx2 .col-item {
+            width: 100%;
+        }
+        &__inner {
+            padding: 7px 20px 20px 15px;
+            .colx2 {
+                .col-item {
+                    width: 48%;
+                }
+                .colx2 {
+                    width: 100%;
+                    .col-item {
+                        width: 48%;
+                    }
+                }
+            }
+        }
+        &__upload-img {
+            height: 100px;
+        }
+        &__buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        & + .form__submit-btn  .btn__big{
+            display: block;
+            margin: 30px auto;
+            font-size: 16px;
+        }
+    }
+    .preview__header__info__title {
+        font-size: 18px;
+    }
+    .preview__header__info__descr {
+        font-size: 12px;
+    }
+    .preview__header__info__address {
+        font-size: 14px;
+        display: block;
+        margin-bottom: 15px;
+        .icon {
+            display: none;
+        }
+
+    }
+    .preview__header__info {
+        height: 120px;
+        bottom: -15px;
+    }
+    .preview__header__info__date {
+        font-size: 12px;
+    }
+    .preview__header__info__image {
+        min-width: 120px;
+        margin-right: 10px;
     }
 }

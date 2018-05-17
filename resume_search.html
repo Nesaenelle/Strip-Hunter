@@ -92,7 +92,7 @@
                                 <img src="img/girl.png" alt="">
                             </div>
                             <div class="questionary__items__item__info">
-                                <div class="flex j-c-s-b">
+                                <div class="questionary__items__item__info__top">
                                     <div>
                                         <div class="questionary__items__item__name">Даша Михайлова</div>
                                         <div class="questionary__items__item__age">27 лет</div>
@@ -114,7 +114,7 @@
                                 <img src="img/girl.png" alt="">
                             </div>
                             <div class="questionary__items__item__info">
-                                <div class="flex j-c-s-b">
+                                <div class="questionary__items__item__info__top">
                                     <div>
                                         <div class="questionary__items__item__name">Даша Михайлова</div>
                                         <div class="questionary__items__item__age">27 лет</div>
@@ -136,7 +136,7 @@
                                 <img src="img/girl.png" alt="">
                             </div>
                             <div class="questionary__items__item__info">
-                                <div class="flex j-c-s-b">
+                                <div class="questionary__items__item__info__top">
                                     <div>
                                         <div class="questionary__items__item__name">Даша Михайлова</div>
                                         <div class="questionary__items__item__age">27 лет</div>
@@ -152,13 +152,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex j-c-c">                    
+                    <div class="flex j-c-c">
                         <div class="pagination">
                             <div class="pagination__prev"></div>
                             <div class="pagination__item active">1</div>
                             <div class="pagination__item">2</div>
                             <div class="pagination__item">3</div>
-                            <div class="ml-5 mr-10">...</div>
+                            <div class="pagination__dots">...</div>
                             <div class="pagination__item">12</div>
                             <div class="pagination__next"></div>
                         </div>
@@ -166,34 +166,43 @@
                 </div>
                 <div class="search__content__right">
                     <div class="search__content__filter">
-                        <div class="search__content__filter__category flex a-i-c"> <i class="icon icon-marker-red"></i> Местоположение</div>
-                        <div class="input">
-                            <label for="">Страна:</label>
-                            <input type="text" placeholder="Украина">
-                        </div>
-                        <div class="input">
-                            <label for="">Город:</label>
-                            <input type="text" placeholder="Одесса">
-                        </div>
-                        <div class="grey-line"></div>
-                        <div class="search__content__filter__category flex a-i-c"> <i class="icon icon-datepicker-red"></i> Возраст</div>
-                        <div class="input">
-                            <label for="">От:</label>
-                            <input type="number" placeholder="">
-                        </div>
-                        <div class="input">
-                            <label for="">До:</label>
-                            <input type="number" placeholder="">
-                        </div>
-                        <div class="grey-line"></div>
-                        <div class="search__content__filter__category flex a-i-c"> <i class="icon icon-category-red"></i> Категория</div>
-                        <div class="input">
-                            <input type="number" placeholder="Танцовщица">
-                        </div>
-                        <div class="grey-line"></div>
-                        <div class="search__content__filter__category flex a-i-c"> <i class="icon icon-exp-red"></i> Опыт работы</div>
-                        <div class="input">
-                            <input type="number" placeholder="Без опыта">
+                        <div class="colx2">
+                            <div class="col-item">
+                                <div class="search__content__filter__category flex a-i-c"> <i class="icon icon-marker-red"></i> Местоположение</div>
+                                <div class="input">
+                                    <label for="">Страна:</label>
+                                    <input type="text" placeholder="Украина">
+                                </div>
+                                <div class="input">
+                                    <label for="">Город:</label>
+                                    <input type="text" placeholder="Одесса">
+                                </div>
+                            </div>
+                            <div class="grey-line"></div>
+                            <div class="col-item">
+                                <div class="search__content__filter__category flex a-i-c"> <i class="icon icon-datepicker-red"></i> Возраст</div>
+                                <div class="input">
+                                    <label for="">От:</label>
+                                    <input type="number" placeholder="">
+                                </div>
+                                <div class="input">
+                                    <label for="">До:</label>
+                                    <input type="number" placeholder="">
+                                </div>
+                            </div>
+                            <div class="grey-line"></div>
+                            <div class="col-item">
+                                <div class="search__content__filter__category flex a-i-c mb-10"> <i class="icon icon-category-red"></i> Категория</div>
+                                <div class="input">
+                                    <input type="number" placeholder="Танцовщица">
+                                </div>
+                            </div>
+                            <div class="col-item">
+                                <div class="search__content__filter__category flex a-i-c mb-10"> <i class="icon icon-exp-red"></i> Опыт работы</div>
+                                <div class="input">
+                                    <input type="number" placeholder="Без опыта">
+                                </div>
+                            </div>
                         </div>
                         <div class="grey-line"></div>
                         <button class="btn__small__blue">Применить</button>

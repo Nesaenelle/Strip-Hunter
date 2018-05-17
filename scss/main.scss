@@ -62,7 +62,7 @@ main {
 
 .pagination {
     display: flex;
-    margin-top: 15px;
+    // margin-top: 15px;
     align-items: center;
     &__prev,
     &__next {
@@ -73,12 +73,12 @@ main {
         cursor: pointer;
     }
     &__prev {
-        margin-right: 10px;
+        margin-right: 20px;
         transform: rotate(135deg);
         -webkit-transform: rotate(135deg);
     }
     &__next {
-        margin-left: 10px;
+        margin-left: 20px;
         transform: rotate(-45deg);
         -webkit-transform: rotate(-45deg);
     }
@@ -89,16 +89,20 @@ main {
         cursor: pointer;
         border: 1px solid #ccc;
         border-radius: 100%;
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 5px;
+        margin-right: 8px;
         &.active {
             color: #fff;
             background: #f4387d;
         }
+    }
+    &__dots {
+        margin: 0 7px 0 0px;
+        font-size: 20px;
     }
 }
 
@@ -153,7 +157,7 @@ main {
         outline: none;
         background: #f4387d;
         border-radius: 4px;
-        font-size: 25px;
+        font-size: 18px;
         border: none;
         padding: 10px 30px;
         color: #fff;
@@ -172,7 +176,7 @@ main {
         outline: none;
         background: #142faf;
         border-radius: 2px;
-        font-size: 14px;
+        font-size: 12px;
 
         border: none;
         padding: 10px;
@@ -314,10 +318,10 @@ main {
         }
         #{ $self }__results {
             color: #fff;
-            font-size: 24px;
+            font-size: 20px;
             &__found {
                 margin-top: 5px;
-                font-size: 18px;
+                font-size: 16px;
             }
             span{
                 color: #f4387d;
@@ -632,6 +636,11 @@ main {
                     margin-right: 4px;
                 }
             }
+            &__bottom {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+            }
         }
         &.vacancies__preview {
             margin-top: 10px;
@@ -697,6 +706,10 @@ main {
             }
             &__info {
                 width: 70%;
+                &__top {
+                    display: flex;
+                    justify-content: space-between;
+                }
                 &__descr {
                     font-size: 12px;
                     font-style: italic;
@@ -782,7 +795,7 @@ main {
                     top: 10px;
                 }
                 &__info {
-                    width: 80%;
+                    width: 84%;
                 }
                 &__name {
                     font-weight: 300;
@@ -805,8 +818,8 @@ main {
     margin-right: 20px;
     &__main {
         border-top: 4px solid #f4387d;
-        width: 270px;
-        height: 270px;
+        width: 220px;
+        height: 220px;
         background: #bababa url(../img/camera.png) no-repeat center;
         margin-right: 30px;
         overflow: hidden;
@@ -847,8 +860,8 @@ main {
         }
     }
     &__small {
-        width: 270px;
-        height: 270px;
+        width: 220px;
+        height: 220px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -858,8 +871,8 @@ main {
         &__item {
             width: calc(100%/2);
             height: calc(100%/2);
-            max-width: 126px;
-            max-height: 123px;
+            max-width: 105px;
+            max-height: 102px;
             background: #bababa url(../img/camera-small.png) no-repeat center;
             position: relative;
             cursor: pointer;

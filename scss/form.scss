@@ -3,42 +3,62 @@
     background: #e8e8e8;
     padding: 20px 20% 20px 20px;
     border-radius: 0px 0px 5px 5px;
+    & + .form__submit-btn {
+        .btn__big {
+            margin: 30px 30px 30px 20px;
+        }
+    }
     label.col-item {
         margin-top: 10px;
     }
     &__link {
         color: #142faf;
-        font-weight: 600;
+        font-weight: 300;
+        // font-size: 18px;
     }
     &__title {
     	color: #8e8e8e;
     	font-size: 20px;
+        margin-bottom: 20px;
     }
     &__inner {
         margin-top: 10px;
-        padding: 20px 50px 20px 20px;
+        padding: 7px 50px 20px 15px;
         background: #d1d1d1;
         position: relative;
         border: 1px solid #8e8e8e;
         border-radius: 5px;
         &__close-btn {
-			width: 53px;
-			height: 50px;
+			width: 43px;
+			height: 40px;
 			background: red;
 			position: absolute;
 			right: -1px;
 			top: -1px;
             background: url(../img/close.png);
+            background-size: contain;
             cursor: pointer;
         }
         .form-section {
         	margin-bottom: 0;
+            font-size: 14px;
         }
         .input {
         	margin-bottom: 0;
+            // &__small {
+            //     margin-bottom: 10px;
+            // }
+            &__label {
+                margin-bottom: 10px;
+                font-size: 14px;
+                &__small {
+                    font-size: 12px;
+                    margin: 5px 0 2px 0;
+                }
+            }
             input {
                 border: 1px solid #8e8e8e;
-                padding: 9px 10px;
+                padding: 6px 10px;
             }
         }
         .textarea {
@@ -49,12 +69,25 @@
         	}
         }
     }
+    &__buttons {
+
+    }
     &__upload-img {
-        height: 270px;
-        background: url(../img/camera.png) center no-repeat #bababa;
+        height: 180px;
+        margin-top: 10px;
+        background: no-repeat #d1d1d1;
         overflow: hidden;
         position: relative;
         cursor: pointer;
+        &:after {
+            content: '';
+            height: 80%;
+            position: absolute;
+            @include absolute-center;
+            width: 120px;
+            background: url(../img/camera.png) center no-repeat;
+            background-size: contain;
+        }
     }
 
     .new-table__body, .new-table__head{

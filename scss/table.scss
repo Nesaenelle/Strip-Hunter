@@ -5,7 +5,7 @@
     overflow: auto;
 
     &__title {
-        font-size: 16px;
+        font-size: 14px;
         margin: 5px 0 15px;
         letter-spacing: -0.3px;
     }
@@ -21,7 +21,7 @@
         &__col {
             padding: 19px 10px 17px 50px;
             color: #000;
-            font-size: 19px; // white-space: pre;
+            font-size: 14px; // white-space: pre;
             position: relative;
             font-weight: 600;
             .icon {
@@ -47,9 +47,9 @@
         }
 
         &__col {
-            min-height: 55px;
+            min-height: 45px;
             color: #354052;
-            font-size: 16px;
+            font-size: 12px;
             padding: 10px 26px;
             white-space: nowrap;
             vertical-align: initial;
@@ -178,12 +178,12 @@
         }
         .new-table__body__col {
             &:nth-child(1) {
-                font-size: 40px;
+                font-size: 32px;
                 color: #f4387d;
                 font-weight: 600;
             }
             &:nth-child(2) {
-                font-size: 26px;
+                font-size: 18px;
                 font-weight: 600;
                 color: #f4387d;
             }
