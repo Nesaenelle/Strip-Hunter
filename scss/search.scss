@@ -3,50 +3,58 @@
     &__content {
         display: flex;
         justify-content: space-between;
-        margin-top: 25px;
+        margin-top: 33px;
         flex-wrap: wrap;
         align-items: end;
         &__left {
-            width: 60%;
-            padding: 0px 20px 20px 20px;
+            width: 67%;
+            padding: 0 27px 20px;
         }
         &__right {
             background: #e8e8e8;
-            width: 38%;
-            padding: 10px 30px 10px 10px;
+            width: 33%;
+            padding: 10px 30px 10px 18px;
             border-radius: 5px;
         }
         &__filter {
+            margin-top: -10px;
             &__category {
-                font-size: 13px;
+                font-size: 18px;
                 margin-top: 10px;
+                // letter-spacing: 0.7px;
+                // margin-bottom: 7px;
                 .icon {
-                    min-width: 15px;
-                    height: 15px;
+                    min-width: 18px;
+                    height: 18px;
                 }
             }
             .btn__small__blue {
                 margin: auto;
-                width: 150px;
+                width: 193px;
                 display: block;
-                font-size: 16px;
-                margin-top: 10px;
+                font-size: 20px;
+                margin-top: 20px;
+                margin-bottom: 10px;
             }
             .input {
                 margin: 0;
                 label {
-                    font-size: 11px;
+                    font-size: 14px;
+                    margin-top: 7px;
+                    display: block;
+                    margin-bottom: 4px;
                 }
                 input {
                     border: none;
                     padding: 8px 10px;
+                    font-size: 18px;
                 }
             }
             .grey-line {
                 height: 3px;
-                margin-top: 13px;
+                margin-top: 14px;
                 position: relative;
-                // margin-bottom: 7px;
+                margin-bottom: 1px;
                 width: 100%;
                 &:after {
                     content: '';
@@ -59,18 +67,41 @@
         .vacancies__items {
             margin-top: 0;
             &__item {
-                padding: 15px 10px 20px 17px;
+                padding: 15px 22px 25px 23px;
                 &__title {
-                    font-size: 18px;
+                    font-size: 24px;
                     font-weight: 300;
                     margin-bottom: 10px;
+                    font-weight: 600;
+                    &:after {
+                        height: 2px;
+                    }
+                }
+                &__city {
+                    font-size: 16px;
+                    .fas {
+                        font-size: 18px;
+                    }
                 }
                 &__place {
+                    font-size: 18px;
+                    margin-top: 4px;
+                    margin-bottom: 10px;
+                }
+                &__descr {
+                    line-height: 20px;
+                    font-size: 14px;
+                    width: 90%;
+                }
+                &__bottom {
+                    margin-top: 15px;
+                }
+                &__date {
                     font-size: 14px;
                 }
                 &__price {
                     margin-top: 0;
-                    font-size: 12px;
+                    font-size: 14px;
                     font-weight: 300;
                 }
             }

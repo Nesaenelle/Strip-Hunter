@@ -55,6 +55,12 @@
                 &.inactive:before {
                     background: #909090;
                 }
+                &:first-child{
+                    text-align: center;
+                    &:before {
+                        content: none;
+                    }
+                }
                 &:before {
                     content: '';
                     position: absolute;

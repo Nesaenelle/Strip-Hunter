@@ -40,7 +40,7 @@
                 &__2 {
                     right: -165px;
                     width: 175px;
-                    top: 195px;
+                    top: 190px;
                 }
                 &__3 {
                     top: 375px;
@@ -66,9 +66,9 @@
                     top: 40px;
                 }
                 &__2 {
-                    left: 110px;
+                    left: 120px;
                     width: 175px;
-                    top: 200px;
+                    top: 190px;
                 }
                 &__3 {
                     top: 375px;
@@ -119,6 +119,9 @@
                 &__3 {
                     font-size: 10px;
                     width: 130px;
+                    span {
+                        font-size: 18px;
+                    }
                 }
             }
         }
@@ -380,12 +383,12 @@
         }
         &__right {
             width: 100%;
-            height: 435px;
+            height: 480px;
             h3 {
                 left: -10px;
             }
             &__bg {
-                top: 50px;
+                top: 80px;
                 width: 96px;
                 height: 320px;
             }
@@ -537,8 +540,15 @@
             }
         }
     }
-    .preview__vacancies, .preview__resumes {
+    .blue-line h1 {
+        font-size: 26px;
+    }
+    .preview__vacancies,
+    .preview__resumes {
         padding: 10px;
+    }
+    .preview__header.resume .preview__header__info__title {
+        margin-top: 35px;
     }
     .preview__header {
         &__buttons {
@@ -546,6 +556,36 @@
         }
         &__info {
             width: 85%;
+        }
+        &__girls {
+            width: 200px;
+            top: 20px;
+            &__item {
+                width: 75px;
+                height: 75px;
+                margin-bottom: 4px;
+                &:nth-child(1) {
+                    margin-right: 4px;
+                }
+                &:nth-child(2) {
+                    margin-right: 0;
+                }
+                &:nth-child(3) {
+                    margin-right: 4px;
+                }
+                &:nth-child(4) {
+                    margin-right: 0;
+                }
+            }
+        }
+        &.resume {
+            .preview__header__info {
+                height: 175px;
+                &__image {
+                    // border-width: 1px;
+                    min-width: 175px;
+                }
+            }
         }
     }
     .preview__content {
@@ -606,6 +646,24 @@
 
     .custom-tabs__content .btn__big {
         font-size: 18px;
+    }
+    
+    .preview__header.resume .preview__header__info__title {
+         margin-top: 17px;
+    }
+    .preview__header{ 
+        &__info {
+            &__address{ 
+                flex-wrap: wrap;
+                white-space: normal;
+                span {
+                    margin-left: 0;
+                }
+            }
+        }
+        &__girls {
+            display: none;
+        }
     }
 }
 
@@ -669,6 +727,12 @@
                 }
             }
         }
+        &__left {
+            height: 470px;
+        }
+        &__right {
+            height: 430px;
+        }
     }
 
     .how-it-works__title {
@@ -703,7 +767,6 @@
         p {
             font-size: 14px;
         }
-
     }
     .questionary__items__item__info__descr {
         display: none;
@@ -738,8 +801,7 @@
     }
 
     .form {
-        padding: 10px;
-        // background: none;
+        padding: 10px; // background: none;
         .colx2 .col-item {
             width: 100%;
         }
@@ -766,7 +828,7 @@
             flex-wrap: wrap;
         }
 
-        & + .form__submit-btn  .btn__big{
+        &+.form__submit-btn .btn__big {
             display: block;
             margin: 30px auto;
             font-size: 16px;
@@ -785,7 +847,6 @@
         .icon {
             display: none;
         }
-
     }
     .preview__header__info {
         height: 120px;

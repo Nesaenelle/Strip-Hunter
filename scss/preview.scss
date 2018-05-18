@@ -4,21 +4,25 @@
         height: 300px;
         padding: 20px;
         position: relative;
+        background-position: center!important;
         &.resume {
             .preview__header__info {
                 height: 190px;
                 &__image {
-                    width: 190px;
+                    min-width: 190px;
                     border-radius: 100%;
                     border: 2px solid #fff;
                 }
+                &__address {
+                    margin-bottom: 15px;
+                }
                 &__title {
-                    margin-top: 40px;
+                    margin-top: 48px;
                 }
             }
         }
         &__title {
-            font-size: 36px;
+            font-size: 40px;
             color: #fff;
             display: flex;
             align-items: center;
@@ -56,7 +60,7 @@
                 min-width: 170px;
                 height: 100%;
                 box-shadow: 10px 10px 20px -7px #000;
-                margin-right: 20px;
+                margin-right: 10px;
                 background-position: center!important;
                 background-size: cover!important;
             }
@@ -68,6 +72,11 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
+            &__age {
+                margin-top: 10px;
+                font-size: 18px;
+                color: #fff;
+            }
             &__descr {
                 margin-top: 10px;
                 font-size: 14px;
@@ -78,7 +87,7 @@
             }
             &__address {
                 margin-top: 15px;
-                font-size: 16px;
+                font-size: 18px;
                 white-space: nowrap;
                 overflow: hidden;
                 margin-bottom: 30px;
@@ -95,25 +104,33 @@
                 }
             }
             &__date {
-                // position: absolute;
-                // bottom: 15px;
-                font-size: 14px;
+                font-size: 16px;
                 color: #8e8f94;
             }
         }
         &__girls {
             position: absolute;
-            top: 40px;
+            top: 30px;
             right: 0;
             width: 400px;
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-end;
             &__item {
-                width: 160px;
-                height: 160px;
+                width: 130px;
+                height: 130px;
                 margin-bottom: 7px;
                 box-shadow: 10px 10px 20px -7px #000;
+                &:nth-child(1) {
+                    margin-right: 10px;
+                }
+                &:nth-child(2) {}
+                &:nth-child(3) {
+                    margin-right: 10px;
+                }
+                &:nth-child(4) {
+                    margin-right: 60px;
+                }
             }
         }
     }
@@ -166,7 +183,7 @@
                 // margin: 25px auto 0;
                 display: block;
                 background: #f4387d;
-                font-size: 16px;
+                font-size: 20px;
                 width: 100%;
                 margin-bottom: 10px;
             }
