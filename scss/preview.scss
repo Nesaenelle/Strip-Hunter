@@ -2,51 +2,61 @@
     margin-bottom: 20px;
     &__header {
         height: 300px;
-        padding: 20px;
+        padding: 20px 32px;
         position: relative;
         background-position: center!important;
         &.resume {
             .preview__header__info {
-                height: 190px;
+                height: 245px;
+                padding-left: 10px;
+                bottom: -65px;
                 &__image {
-                    min-width: 190px;
+                    margin-right: 10px;
+                    min-width: 245px;
                     border-radius: 100%;
                     border: 2px solid #fff;
                 }
                 &__address {
-                    margin-bottom: 15px;
+                    margin-bottom: 30px;
                 }
                 &__title {
-                    margin-top: 48px;
+                    margin-top: 60px;
                 }
             }
         }
         &__title {
-            font-size: 40px;
+            font-size: 48px;
             color: #fff;
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
             &__top {
                 background: red;
-                border-radius: 3px;
-                padding: 5px 11px;
+                border-radius: 6px;
+                padding: 9px 16px;
                 display: inline-block;
-                font-size: 16px;
+                font-size: 18px;
                 margin-left: 10px;
                 font-weight: 600;
             }
         }
         &__buttons {
             position: absolute;
-            width: 270px;
+            width: 300px;
             height: 100%;
-            right: 20px;
+            right: 30px;
             top: 0;
             display: flex;
             align-items: center;
             .btn {
                 width: 100%;
-                font-size: 18px;
+                font-size: 26px;
+                margin: 6px 0;
+                padding: 11px 15px;
+                height: 60px;
+                &.small {
+                    font-size: 20px;
+                }
             }
         }
         &__info {
@@ -56,16 +66,17 @@
             display: flex; // justify-content: space-between;
             width: 50%;
             height: 170px;
+
             &__image {
                 min-width: 170px;
                 height: 100%;
                 box-shadow: 10px 10px 20px -7px #000;
-                margin-right: 10px;
+                margin-right: 28px;
                 background-position: center!important;
                 background-size: cover!important;
             }
             &__title {
-                font-size: 22px;
+                font-size: 28px;
                 font-weight: bold;
                 letter-spacing: 1px;
                 white-space: nowrap;
@@ -73,63 +84,64 @@
                 text-overflow: ellipsis;
             }
             &__age {
-                margin-top: 10px;
-                font-size: 18px;
+                margin-top: 4px;
+                font-size: 24px;
                 color: #fff;
             }
             &__descr {
-                margin-top: 10px;
-                font-size: 14px;
+                margin-top: 4px;
+                font-size: 16px;
                 font-weight: 100;
                 color: #8e8f94;
-                height: 30px;
+                height: 38px;
                 overflow: hidden;
+                line-height: 22px;
             }
             &__address {
-                margin-top: 15px;
-                font-size: 18px;
+                margin-top: 13px;
+                font-size: 22px;
                 white-space: nowrap;
                 overflow: hidden;
-                margin-bottom: 30px;
+                margin-bottom: 24px;
                 text-overflow: ellipsis;
                 .icon {
-                    min-width: 20px;
+                    min-width: 26px;
                 }
                 span {
                     color: #8e8f94;
-                    margin-left: 10px;
-                    font-size: 16px;
+                    margin-left: 15px;
+                    font-size: 18px;
                     display: inline-block;
                     margin-top: 3px;
                 }
             }
             &__date {
-                font-size: 16px;
+                font-size: 18px;
                 color: #8e8f94;
             }
         }
         &__girls {
             position: absolute;
-            top: 30px;
+            top: 40px;
             right: 0;
-            width: 400px;
+            width: 430px;
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-end;
             &__item {
-                width: 130px;
-                height: 130px;
+                width: 160px;
+                height: 160px;
                 margin-bottom: 7px;
-                box-shadow: 10px 10px 20px -7px #000;
+                box-shadow: 0px 0px 25px 0px #000;
                 &:nth-child(1) {
-                    margin-right: 10px;
+                    margin-right: 15px;
                 }
                 &:nth-child(2) {}
                 &:nth-child(3) {
-                    margin-right: 10px;
+                    margin-right: 15px;
                 }
                 &:nth-child(4) {
-                    margin-right: 60px;
+                    margin-right: 68px;
                 }
             }
         }
@@ -152,7 +164,7 @@
             }
         }
         &__title {
-            font-size: 20px;
+            font-size: 26px;
             font-weight: 800;
             border-bottom: 3px solid #f4387d;
             display: inline-block;
@@ -163,17 +175,31 @@
             }
         }
         &__left {
-            width: 60%;
-            padding: 40px 20px 20px 100px;
+            &.resume {
+                padding: 85px 20px 20px 130px;
+            }
+            width: 62%;
+            padding: 33px 20px 20px 103px;
         }
         &__right {
             background: #e8e8e8;
-            width: 38%;
-            padding: 10px 10px 10px 10px;
+            width: 32%;
+            padding: 6px 10px;
+            margin-top: 15px;
+
             &.resume {
-                padding: 70px 10px 10px 10px;
+                width: 29%;
+                >div {
+                    width: 90%;
+                }
+                padding: 73px 10px 10px 10px;
                 display: flex;
                 justify-content: center;
+                .preview__content__title {
+                    border-left: 3px solid #f4387d;
+                    border-bottom: none;
+                    padding-left: 5px;
+                }
             }
             border-radius: 5px;
             &.no-background {
@@ -181,22 +207,34 @@
             }
             .btn {
                 // margin: 25px auto 0;
-                display: block;
+                display: flex;
+                justify-content:center;
                 background: #f4387d;
-                font-size: 20px;
+                font-size: 22px;
+                padding: 14px 5px;
                 width: 100%;
-                margin-bottom: 10px;
+                margin-bottom: 14px;
+                &.big {
+                    font-size: 26px;
+                }
+            }
+            &__title {
+                font-size: 22px;
             }
         }
         &__cost {
+            font-size: 24px;
             span {
                 color: #f73c80;
-                font-size: 16px;
+                font-size: 24px;
             }
         }
         &__description {}
         &__contacts {
+            margin-top: 30px;
             &__item {
+                font-size: 20px;
+                line-height: 26px;
                 span {
                     color: #f73c80;
                 }
@@ -204,16 +242,16 @@
         }
         &__socials {
             display: flex;
-            margin-top: 15px;
+            margin-top: 12px;
             &__item {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 29px;
-                height: 29px;
+                width: 35px;
+                height: 35px;
                 border-radius: 100%;
                 border: 1px solid #f73c80;
-                margin-right: 8px;
+                margin-right: 12px;
                 &.fb {}
             }
         }
@@ -221,10 +259,10 @@
     &__vacancies,
     &__resumes {
         background: #e8e8e8;
-        padding: 13px 21px;
+        padding: 13px 21px 25px 21px;
         border-radius: 5px;
         &__title {
-            font-size: 16px;
+            font-size: 20px;
             color: #f73c80;
         }
     }

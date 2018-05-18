@@ -5,7 +5,10 @@
     border-radius: 0px 0px 5px 5px;
     & + .form__submit-btn {
         .btn__big {
-            margin: 30px 30px 30px 20px;
+            margin: 20px;
+            font-size: 26px;
+            padding: 18px 52px;
+            letter-spacing: -.3px;
         }
     }
     label.col-item {
@@ -29,8 +32,8 @@
         border: 1px solid #8e8e8e;
         border-radius: 5px;
         &__close-btn {
-			width: 43px;
-			height: 40px;
+            width: 55px;
+            height: 52px;
 			background: red;
 			position: absolute;
 			right: -1px;
@@ -41,7 +44,7 @@
         }
         .form-section {
         	margin-bottom: 0;
-            font-size: 14px;
+            font-size: 18px;
         }
         .input {
         	margin-bottom: 0;
@@ -49,10 +52,10 @@
             //     margin-bottom: 10px;
             // }
             &__label {
-                margin-bottom: 2px;
-                font-size: 14px;
+                margin-bottom: 13px;
+                font-size: 18px;
                 &__small {
-                    font-size: 13px;
+                    font-size: 14px;
                     margin: 5px 0 2px 0;
                 }
             }
@@ -70,10 +73,16 @@
         }
     }
     &__buttons {
-
+        .btn__small__blue {
+            font-size: 16px;
+            padding: 15px 22px;
+        }
+        a {
+            font-size: 20px;
+        }
     }
     &__upload-img {
-        height: 180px;
+        height: 228px;
         margin-top: 10px;
         background: no-repeat #d1d1d1;
         overflow: hidden;
@@ -84,7 +93,7 @@
             height: 80%;
             position: absolute;
             @include absolute-center;
-            width: 120px;
+            width: 160px;
             background: url(../img/camera.png) center no-repeat;
             background-size: contain;
         }

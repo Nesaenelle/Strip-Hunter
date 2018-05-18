@@ -12,6 +12,7 @@
         border: 1px solid #f73c80;
         transition: 0.1s;
         font-family: Gilroy;
+        font-size: 20px;
         &.dark {
             border-color: #666;
             &:focus {
@@ -41,19 +42,20 @@
         height: 100%;
         border-radius: 4px 4px 4px 4px;
         line-height: 17px;
+        padding: 0px 27px;
         // font-weight: 600;
     }
     &__label {
         display: block;
-        font-size: 16px;
-        margin-bottom: 2px;
+        font-size: 20px;
+        margin-bottom: 4px;
         b {
             color: #f73c80;
         }
         &__small {
             display: block;
             margin-bottom: 6px;
-            font-size: 14px;
+            font-size: 16px;
         }
     }
 }
@@ -69,7 +71,7 @@
 }
 
 .form-section {
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 7px;
     // margin-bottom: -5px;
     display: block;
@@ -81,11 +83,11 @@
         font-size: 14px;
     }
     &.splitter {
-        font-size: 20px;
+        font-size: 24px;
         color: #aaa;
-        margin: 15px 0 5px 0;
+        margin: 14px 0 14px 0;
         small {
-            font-size: 14px;
+            font-size: 16px;
         }
     }
 }
@@ -171,8 +173,8 @@
     &__checked {
         top: 0;
         left: 0;
-        width: 17px;
-        height: 17px;
+        width: 16px;
+        height: 16px;
         position: absolute;
         display: block;
         border-radius: 100%;

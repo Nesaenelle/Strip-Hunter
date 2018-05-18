@@ -11,7 +11,7 @@ main {
 .blue-line {
     background: #0a1859;
     .container {
-        padding: 12px 45px 15px 45px;
+        padding: 16px 45px 16px;
     }
     h1 {
         color: #fff;
@@ -690,13 +690,23 @@ main {
             margin-top: 10px;
             #{ $self }__item {
                 background: #fff;
-                &__title:after {
-                    background: #f73c80;
+                padding: 15px 20px;
+                &__title {
+                    font-size: 18px;
+                    &:after {
+                        background: #f73c80;
+                    }
+                }
+                &__place {
+                    font-size: 14px;
                 }
                 &__price {
                     margin-bottom: 0;
+                    margin-top: 20px;
                 }
                 &__descr {
+                    height: auto;
+                    margin: 5px 0px;
                     color: #8e8f94;
                 }
             }
@@ -705,7 +715,7 @@ main {
             display: block;
             margin-top: 15px;
             #{ $self }__item {
-                margin-bottom: 20px;
+                margin-bottom: 25px;
                 width: 100%;
             }
         }
@@ -817,6 +827,12 @@ main {
                 background: #fff;
                 padding: 20px 10px;
                 box-shadow: 0 0px 23px -9px #000;
+                &__info {
+                    &__descr {
+                        font-size: 14px;
+                        height: auto;
+                    }
+                }
             }
         }
         &.vertical {
@@ -897,9 +913,9 @@ main {
     display: flex;
     margin-right: 20px;
     &__main {
-        border-top: 4px solid #f4387d;
-        width: 220px;
-        height: 220px;
+        border-top: 5px solid #f4387d;
+        width: 270px;
+        height: 275px;
         background: #bababa url(../img/camera.png) no-repeat center;
         margin-right: 30px;
         overflow: hidden;
@@ -940,19 +956,19 @@ main {
         }
     }
     &__small {
-        width: 220px;
-        height: 220px;
+        width: 270px;
+        height: 275px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         align-content: space-between;
-        border-top: 4px solid #fff;
+        border-top: 5px solid #fff;
         border-bottom: 4px solid #f4387d;
         &__item {
             width: calc(100%/2);
             height: calc(100%/2);
-            max-width: 105px;
-            max-height: 102px;
+            max-width: 124px;
+            max-height: 122px;
             background: #bababa url(../img/camera-small.png) no-repeat center;
             position: relative;
             cursor: pointer;
@@ -1012,42 +1028,43 @@ main {
         &__item {
             box-shadow: 0 3px 23px -9px #000;
             border-radius: 0px;
-            padding: 7px 20px;
+            padding: 7px 33px 40px 33px;
             border: 1px solid #ccc;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             margin-top: 10px;
             &__title {
-                font-size: 16px;
+                font-size: 22px;
                 font-weight: 600;
                 position: relative;
                 padding-left: 15px;
+                margin-left: -15px;
                 &:after {
-                    bottom: 7px;
+                    bottom: 9px;
                     content: '';
                     position: absolute;
-                    width: 9px;
-                    height: 9px;
+                    width: 12px;
+                    height: 12px;
                     background: #f4387d;
                     border-radius: 100%;
-                    left: 0;
+                    left: -8px;
                 }
             }
             &__descr {
-                font-size: 16px;
+                font-size: 20px;
                 height: 45px;
-                margin-top: 10px;
+                margin-top: 15px;
             }
             &__date {
-                font-size: 16px;
-                margin-top: 10px;
+                font-size: 20px;
+                margin-top: 17px;
             }
             &__address {
-                margin-top: 10px;
-                font-size: 16px;
+                margin-top: 14px;
+                font-size: 20px;
             }
             &__place {
-                font-size: 18px;
-                margin-top: 10px;
+                font-size: 22px;
+                margin-top: 15px;
                 font-weight: 600;
             }
         }
@@ -1057,10 +1074,27 @@ main {
 .payment-system {
     padding: 10px;
     background: #fff;
-    width: 100px;
+    width: 130px;
     border-radius: 5px;
     margin-right: 5px;
-    img {
-        width: 100%;
+    .radio {
+        width: 80%;
+        margin: 15px auto 5px;
     }
+    .radio__title {
+        font-size: 18px;
+    }
+    img {
+        // width: 100%;
+        display: block;
+        margin: auto;
+    }
+}
+
+.payment-method {
+    font-size: 22px;
+}
+
+.discount-text {
+    font-size: 22px;
 }

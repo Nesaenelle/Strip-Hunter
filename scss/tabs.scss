@@ -2,18 +2,18 @@
     display: flex;
     flex-wrap: wrap;
     &__item {
-        margin: 0 8px 0 13px;
-            background: #f4387d;
-            color: #fff;
-            border-radius: 5px 5px 0 0;
-            padding: 12px 10px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            width: 157px;
-            justify-content: center;
-            text-transform: uppercase;
-            font-size: 16px;
+        margin: 0 4px 0 18px;
+        background: #f4387d;
+        color: #fff;
+        border-radius: 5px 5px 0 0;
+        padding: 12px 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        width: 157px;
+        justify-content: center;
+        text-transform: uppercase;
+        font-size: 16px;
         .icon {
             min-width: 16px;
         }
@@ -23,9 +23,6 @@
     }
 
     &__content {
-
-     
-
         min-height: 400px;
         margin-bottom: 30px;
         &__bg {
@@ -34,7 +31,10 @@
             background: #e8e8e8;
             width: 100%;
             & + .btn__big {
+                font-size: 26px;
                 margin: 20px 20px 0px 20px;
+                padding: 18px 52px;
+                letter-spacing: -0.3px;
             }
         }
         &__item {
@@ -45,9 +45,9 @@
             }
         }
 
-        .btn__big {
-            padding: 14px 34px;
-        }
+        // .btn__big {
+        //     padding: 14px 34px;
+        // }
     }
 }
 
@@ -69,6 +69,7 @@
             width: 50%;
             .btn__small__blue {
                 padding: 10px 25px;
+                font-size: 18px;
             }
         }
     }

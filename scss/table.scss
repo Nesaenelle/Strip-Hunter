@@ -5,7 +5,7 @@
     overflow: auto;
 
     &__title {
-        font-size: 14px;
+        font-size: 16px;
         margin: 5px 0 15px;
         letter-spacing: -0.3px;
     }
@@ -21,7 +21,7 @@
         &__col {
             padding: 19px 10px 17px 50px;
             color: #000;
-            font-size: 18px; // white-space: pre;
+            font-size: 20px; // white-space: pre;
             position: relative;
             font-weight: 600;
             .icon {
@@ -172,7 +172,7 @@
             }
         }
         .btn__small__blue {
-            font-size: 16px;
+            font-size: 18px;
             padding: 7px 10px;
         }
     }
