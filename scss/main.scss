@@ -1,6 +1,6 @@
 body {
     // font-family: arial;
-    min-width: 300px;
+    min-width: 360px;
     font-family: Gilroy;
 }
 
@@ -11,7 +11,11 @@ main {
 .blue-line {
     background: #0a1859;
     .container {
+        height: 95px;
         padding: 16px 45px 16px;
+        > div {
+            height: 100%;
+        }
     }
     h1 {
         color: #fff;
@@ -156,17 +160,17 @@ main {
             transform: translateY(1px);
         }
 
-        .fas {
-            font-size: 10px;
-            margin-right: 5px;
-            position: absolute;
-            left: 11px;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-            width: 10px;
-            height: 12px;
-        }
+        // .fas {
+        //     font-size: 10px;
+        //     margin-right: 5px;
+        //     position: absolute;
+        //     left: 11px;
+        //     top: 0;
+        //     bottom: 0;
+        //     margin: auto;
+        //     width: 10px;
+        //     height: 12px;
+        // }
     }
     &__big {
         outline: none;
@@ -301,7 +305,7 @@ main {
         }
         input[type="text"] {
             width: 100%;
-            padding: 15px 85px 15px 35px;
+            padding: 15px 120px 15px 35px;
             border: none;
             outline: none;
             border-radius: 3px 0px 0px 3px;
@@ -341,7 +345,7 @@ main {
                 font-size: 20px;
                 padding-left: 58px;
                 padding-right: 29px;
-                max-height: 55px;
+                max-height: 54px;
                 max-width: 200px;
             }
             .btn__small {
@@ -672,8 +676,8 @@ main {
                 }
             }
             &__city {
-                font-size: 12px;
-                margin-top: 5px;
+                font-size: 14px;
+                margin-top: 2px;
                 .fas {
                     font-size: 12px;
                     color: #333;
@@ -692,17 +696,17 @@ main {
                 background: #fff;
                 padding: 15px 20px;
                 &__title {
-                    font-size: 18px;
+                    // font-size: 20px;
                     &:after {
                         background: #f73c80;
                     }
                 }
                 &__place {
-                    font-size: 14px;
+                    // font-size: 16px;
                 }
                 &__price {
                     margin-bottom: 0;
-                    margin-top: 20px;
+                    margin-top: 0;
                 }
                 &__descr {
                     height: auto;
@@ -1051,19 +1055,19 @@ main {
             }
             &__descr {
                 font-size: 20px;
-                height: 45px;
+                // height: 45px;
                 margin-top: 15px;
             }
             &__date {
-                font-size: 20px;
+                font-size: 18px;
                 margin-top: 17px;
             }
             &__address {
                 margin-top: 14px;
-                font-size: 20px;
+                font-size: 16px;
             }
             &__place {
-                font-size: 22px;
+                font-size: 20px;
                 margin-top: 15px;
                 font-weight: 600;
             }
@@ -1092,9 +1096,9 @@ main {
 }
 
 .payment-method {
-    font-size: 22px;
+    font-size: 17px;
 }
 
 .discount-text {
-    font-size: 22px;
+    font-size: 17px;
 }

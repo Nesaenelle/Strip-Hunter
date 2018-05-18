@@ -1,7 +1,7 @@
 .input {
     width: 100%;
     margin-bottom: 10px;
-    margin-top: 8px;
+    // margin-top: 8px;
     position: relative;
     input {
         outline: none;
@@ -21,6 +21,19 @@
         }
         &:focus {
             box-shadow: 0 0 1px 1px #f73c80;
+        }
+    }
+    &.dropdown {
+        &:after {
+            content: '';
+            background: url(../img/dropdown-arrow.png) no-repeat;
+            width: 18px;
+            height: 14px;
+            position: absolute;
+            right: 10px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
         }
     }
     &.input__small {
@@ -48,7 +61,7 @@
     &__label {
         display: block;
         font-size: 20px;
-        margin-bottom: 4px;
+        margin-top: 8px;
         b {
             color: #f73c80;
         }

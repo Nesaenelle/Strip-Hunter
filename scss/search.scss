@@ -36,9 +36,10 @@
                 margin-top: 20px;
                 margin-bottom: 10px;
             }
+
             .input {
                 margin: 0;
-                label {
+                &__label , label {
                     font-size: 14px;
                     margin-top: 7px;
                     display: block;

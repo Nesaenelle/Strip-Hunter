@@ -89,6 +89,48 @@
     .new-table.order-details .new-table__body__col:nth-child(2) {
         font-size: 14px;
     }
+
+    .preview__header__info__address {
+        font-size: 20px;
+    }
+    .preview__header__info__date {
+        font-size: 16px;
+    }
+
+    .preview__content__right .btn {
+        font-size: 18px;
+    }
+    .preview__content__right.resume {
+        width: 38%;
+    }
+
+    .preview__header {
+        &__info {
+            width: 85%;
+        }
+        &__girls {
+            width: 220px;
+            top: 20px;
+            &__item {
+                width: 97px;
+                height: 97px;
+                margin-bottom: 8px;
+                background-size: cover!important;
+                &:nth-child(1) {
+                    margin-right: 8px;
+                }
+                &:nth-child(2) {
+                    margin-right: 0;
+                }
+                &:nth-child(3) {
+                    margin-right: 8px;
+                }
+                &:nth-child(4) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 980px) {
@@ -99,7 +141,7 @@
             justify-content: space-between;
             display: block;
             .btn__small {
-                display: block;
+                // display: block;
                 padding: 5px 5px;
                 margin: 5px 0px 5px 0px;
             }
@@ -296,7 +338,7 @@
                 display: block;
             }
             .btn__small {
-                display: inline-block;
+                // display: inline-block;
                 padding: 10px 25px;
                 margin: 0px 15px 0 5px;
                 font-size: 18px;
@@ -309,6 +351,26 @@
         height: auto;
         .container {
             padding: 40px 20px;
+        }
+        &.search-page {
+            .container {
+                padding: 29px 20px 17px;
+                .btn__small {
+                    border-radius: 3px;
+                }
+                .main-search-block__input {
+                    input {
+                        font-size: 14px;
+                    }
+                    &__city {
+                        right: 20px;
+                        padding-left: 45px;
+                        padding-right: 12px;
+                        font-size: 16px;
+                        max-height: 53px;
+                    }
+                }
+            }
         }
         &__title {
             font-size: 38px;
@@ -549,40 +611,18 @@
     .preview__resumes {
         padding: 10px;
     }
-    .preview__header.resume .preview__header__info__title {
-        margin-top: 35px;
-    }
+
     .preview__header {
+        &__title {
+            font-size: 38px;
+        }
         &__buttons {
             display: none;
-        }
-        &__info {
-            width: 85%;
-        }
-        &__girls {
-            width: 200px;
-            top: 20px;
-            &__item {
-                width: 75px;
-                height: 75px;
-                margin-bottom: 4px;
-                &:nth-child(1) {
-                    margin-right: 4px;
-                }
-                &:nth-child(2) {
-                    margin-right: 0;
-                }
-                &:nth-child(3) {
-                    margin-right: 4px;
-                }
-                &:nth-child(4) {
-                    margin-right: 0;
-                }
-            }
         }
         &.resume {
             .preview__header__info {
                 height: 175px;
+
                 &__image {
                     // border-width: 1px;
                     min-width: 175px;
@@ -601,6 +641,9 @@
             margin-top: 30px;
             &.resume {
                 padding: 10px;
+                .preview__content__buttons {
+                    margin: 70px 0 20px;
+                }
             }
         }
         &__right {
@@ -621,6 +664,21 @@
         }
         &__socials {
             margin-bottom: 20px;
+        }
+    }
+
+    .preview__header.resume .preview__header__info__title {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    .preview__header__info__age {
+        font-size: 14px;
+    }
+
+    .preview__header.resume .preview__header__info__address {
+        font-size: 18px;
+        span {
+            font-size: 14px;
         }
     }
 }
@@ -667,26 +725,75 @@
     .custom-tabs__content .btn__big {
         font-size: 18px;
     }
-        
+
     .preview__header__title {
         font-size: 32px;
     }
     .preview__header.resume .preview__header__info__title {
-         margin-top: 17px;
+        margin-top: 17px;
+        font-size: 18px;
     }
-    .preview__header{ 
+    .preview__header.resume .preview__header__info {
+        bottom: -40px;
+    }
+    .preview__header.resume .preview__header__info__address {
+        margin-bottom: 20px;
+    }
+    .preview__header {
         &__info {
-            &__address{ 
+            width: 95%;
+            &__address {
                 flex-wrap: wrap;
                 white-space: normal;
                 span {
                     margin-left: 0;
+                    margin-top: 10px;
+                    width: 100%;
                 }
             }
         }
         &__girls {
-            display: none;
+            // display: none;
+            bottom: -82px;
+            top: auto;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            width: 270px;
+            &__item {
+                width: 28px;
+                height: 28px;
+                border-radius: 100%;
+                position: relative;
+                box-shadow: 0 0 10px 0 #000;
+                &:nth-child(1) {
+                    transform: translate(-22px, -15px);
+                    margin-right: 8px;
+                }
+                &:nth-child(2) {
+                    margin-right: 0;
+                    transform: translate(-21px, 0px);
+                }
+                &:nth-child(3) {
+                    margin-right: 8px;
+                    transform: translate(-5px, 5px);
+                }
+                &:nth-child(4) {
+                    margin-right: 0;
+                    transform: translate(0px, -10px);
+                }
+            }
         }
+    }
+
+    .dotted-border {
+        .input__label__small {
+            font-size: 14px;
+        }
+    }
+
+    .input .btn__small {
+        padding: 0 15px;
     }
 }
 
@@ -708,6 +815,11 @@
     }
 
     .main-search-block {
+        &.search-page {
+            .container {
+                padding: 29px 10px 17px;
+            }
+        }
         &__title {
             font-size: 24px;
         }
@@ -722,7 +834,7 @@
         &__input {
             display: block;
             &__city {
-                right: 20px;
+                right: 2px;
             }
             input[type=text] {
                 border-radius: 3px 3px 3px 3px;
@@ -746,15 +858,35 @@
                 &__1,
                 &__2,
                 &__3 {
-                    display: none;
+                    // display: none;
+                    font-size: 0;
+                    width: 100px;
+                    span {
+                        font-size: 16px;
+                    }
                 }
             }
         }
         &__left {
             height: 470px;
+            &__text {
+                &__1 {}
+                &__2 {
+                    right: -87px;
+                }
+            }
         }
         &__right {
             height: 430px;
+            &__text {
+                &__1,
+                &__3 {
+                    left: -94px;
+                }
+                &__2 {
+                    right: -87px;
+                }
+            }
         }
     }
 
@@ -775,7 +907,7 @@
     }
 
     .vacancies__items__item__descr {
-        display: none;
+        // display: none;
     }
     .vacancies__items__item__bottom {
         display: block;
@@ -792,7 +924,7 @@
         }
     }
     .questionary__items__item__info__descr {
-        display: none;
+        // display: none;
     }
     .questionary__items__item__info__top {
         display: block;
@@ -859,6 +991,30 @@
     }
     .preview__header {
         padding: 10px;
+
+        &.resume {
+            .preview__header__info {
+                // height: 140px;
+                padding-left: 0; // bottom: -40px;
+                &__title {}
+                &__age {
+                    // font-size: 12px;
+                }
+                &__address {
+                    // font-size: 14px;
+                    margin-top: 2px;
+                    height: 68px;
+                    white-space: initial;
+                    overflow: hidden;
+                }
+                &__image {
+                    // min-width: 140px;
+                }
+            }
+        }
+        &__girls {
+            width: 205px;
+        }
     }
     .preview__header__title {
         font-size: 26px;
@@ -870,9 +1026,12 @@
         font-size: 12px;
     }
     .preview__header__info__address {
-        font-size: 14px;
+        // font-size: 14px;
         display: block;
         margin-bottom: 15px;
+        text-overflow: ellipsis;
+        display: block;
+        white-space: nowrap;
         .icon {
             display: none;
         }
@@ -882,10 +1041,24 @@
         bottom: -15px;
     }
     .preview__header__info__date {
-        font-size: 12px;
+        // font-size: 12px;
     }
     .preview__header__info__image {
         min-width: 120px;
         margin-right: 10px;
+    }
+
+    .search__content {
+        .colx2 {
+            .col-item {
+                width: 100%;
+            }
+        }
+    }
+
+    .dotted-border {
+        .input__label__small {
+            font-size: 16px;
+        }
     }
 }
