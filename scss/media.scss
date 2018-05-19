@@ -363,7 +363,7 @@
                         font-size: 14px;
                     }
                     &__city {
-                        right: 20px;
+                        // right: 20px;
                         padding-left: 45px;
                         padding-right: 12px;
                         font-size: 16px;
@@ -587,13 +587,13 @@
         flex-direction: column-reverse;
         margin-top: 0;
         &__left {
-            margin-top: 20px;
+            // margin-top: 20px;
             padding: 0px;
             width: 100%;
         }
         &__right {
             width: 100%;
-            padding: 10px;
+            // padding: 10px;
         }
         .grey-line {
             display: none;
@@ -668,15 +668,19 @@
     }
 
     .preview__header.resume .preview__header__info__title {
-        font-size: 18px;
+        font-size: 20px;
         margin-top: 15px;
     }
     .preview__header__info__age {
         font-size: 14px;
     }
 
+    .preview__header__info__date {
+        font-size: 14px;
+    }
+
     .preview__header.resume .preview__header__info__address {
-        font-size: 18px;
+        font-size: 16px;
         span {
             font-size: 14px;
         }
@@ -731,7 +735,7 @@
     }
     .preview__header.resume .preview__header__info__title {
         margin-top: 17px;
-        font-size: 18px;
+        font-size: 20px;
     }
     .preview__header.resume .preview__header__info {
         bottom: -40px;
@@ -818,6 +822,11 @@
         &.search-page {
             .container {
                 padding: 29px 10px 17px;
+                .main-search-block__input {
+                    &__city {
+                        right: 20px;
+                    }
+                }
             }
         }
         &__title {
@@ -1002,8 +1011,9 @@
                 }
                 &__address {
                     // font-size: 14px;
-                    margin-top: 2px;
+                    margin-top: 5px;
                     height: 68px;
+                    margin-bottom: 10px;
                     white-space: initial;
                     overflow: hidden;
                 }
@@ -1043,6 +1053,10 @@
     .preview__header__info__date {
         // font-size: 12px;
     }
+    .preview__header__info__date {
+        font-size: 13px;
+    }
+
     .preview__header__info__image {
         min-width: 120px;
         margin-right: 10px;
@@ -1060,5 +1074,9 @@
         .input__label__small {
             font-size: 16px;
         }
+    }
+
+    .search__content .filter-toggle-btn {
+        display: block;
     }
 }
