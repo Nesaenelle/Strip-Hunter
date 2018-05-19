@@ -176,16 +176,18 @@
 (function() {
     var filter= document.querySelector('#search__content__filter');
     var btn  = document.querySelector('#toggle-filter'); 
-    btn.addEventListener('click', function(e) {
-        e.stopPropagation();
-        
-        if (filter.classList.contains('hidden')) {
-            filter.classList.remove('hidden');
-            btn.classList.add('opened');
-        } else {
-            filter.classList.add('hidden');
-            btn.classList.remove('opened');
-        }
+    if(btn) {    
+        btn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            
+            if (filter.classList.contains('hidden')) {
+                filter.classList.remove('hidden');
+                btn.classList.add('opened');
+            } else {
+                filter.classList.add('hidden');
+                btn.classList.remove('opened');
+            }
 
-    });
+        });
+    }
 }());

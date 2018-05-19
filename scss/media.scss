@@ -730,6 +730,10 @@
         font-size: 18px;
     }
 
+    .questionary__items.vertical .questionary__items__item__city {
+        font-size: 16px;
+    }
+
     .preview__header__title {
         font-size: 32px;
         margin-top: 20px;
@@ -1077,6 +1081,11 @@
         .colx2 {
             .col-item {
                 width: 100%;
+            }
+        }
+        &__right {
+            &.hidden {
+                display: none;
             }
         }
     }

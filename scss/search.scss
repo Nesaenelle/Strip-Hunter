@@ -11,8 +11,8 @@
             position: relative;
             display: none;
             &.opened:after{
-                transform: rotate(45deg);
-                -webkit-transform: rotate(45deg);
+                transform: rotate(-135deg);
+                -webkit-transform: rotate(-135deg);
             }
             &:after {
                 display: block;
@@ -24,8 +24,8 @@
                 padding: 5px;
                 position: relative;
                 top: 2px;
-                transform: rotate(-135deg);
-                -webkit-transform: rotate(-135deg);
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
             }
         }
         &__left {
@@ -34,7 +34,9 @@
         }
         &__right {
             width: 33%;
-
+            &.hidden {
+                display: block;
+            }
         }
         &__filter {
             background: #e8e8e8;
