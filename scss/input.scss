@@ -41,12 +41,14 @@
     }
     .icon {
         position: absolute;
-        bottom: 2px;
+        bottom: 0px;
+        top: 0;
+        margin: auto;
         left: 8px;
         background-size: contain;
-        &.icon-locked {
-            bottom: 4px;
-        }
+        // &.icon-locked {
+        //     bottom: 4px;
+        // }
     }
     .btn__small {
         position: absolute;

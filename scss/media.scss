@@ -732,6 +732,7 @@
 
     .preview__header__title {
         font-size: 32px;
+        margin-top: 20px;
     }
     .preview__header.resume .preview__header__info__title {
         margin-top: 17px;
@@ -1027,16 +1028,16 @@
         }
     }
     .preview__header__title {
-        font-size: 26px;
+        font-size: 30px;
     }
     .preview__header__info__title {
-        font-size: 18px;
+        font-size: 22px;
     }
     .preview__header__info__descr {
         font-size: 12px;
     }
     .preview__header__info__address {
-        // font-size: 14px;
+        font-size: 14px;
         display: block;
         margin-bottom: 15px;
         text-overflow: ellipsis;
@@ -1047,8 +1048,8 @@
         }
     }
     .preview__header__info {
-        height: 120px;
-        bottom: -15px;
+        height: 130px;
+        bottom: -25px;
     }
     .preview__header__info__date {
         // font-size: 12px;
@@ -1058,8 +1059,18 @@
     }
 
     .preview__header__info__image {
-        min-width: 120px;
+        min-width: 130px;
         margin-right: 10px;
+    }
+
+    .preview__content__title {
+        font-size: 22px;
+    }
+    .preview__content__cost {
+        font-size: 20px;
+        span {
+            font-size: 20px;
+        }
     }
 
     .search__content {

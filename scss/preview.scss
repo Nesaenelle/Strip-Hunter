@@ -158,9 +158,12 @@
             flex-wrap: wrap;
             .btn__big {
                 padding: 15px 20px;
-                width: 250px;
-                font-size: 16px;
+                width: 270px;
+                font-size: 21px;
                 margin: 0px 10px 10px 10px;
+                &.with-icon {
+                    font-size: 18px;
+                }
             }
         }
         &__title {
@@ -224,12 +227,13 @@
         }
         &__cost {
             font-size: 24px;
+            margin-bottom: 15px;
             span {
                 color: #f73c80;
                 font-size: 24px;
             }
         }
-        &__description {}
+        &__descr {margin-bottom: 15px;}
         &__contacts {
             margin-top: 30px;
             &__item {
